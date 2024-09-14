@@ -24,7 +24,7 @@ const Header = () => {
                 alt=""
               />
               <span className="text-slate-700 font-bold text-2xl">
-                Mebellar
+                Kotlov
               </span>
             </Link>
           </div>
@@ -58,23 +58,12 @@ const Header = () => {
             >
               Bosh sahifa
             </NavLink>
+            
             <NavLink
-              to={"/category"}
+              to={"/advantage"}
               className="text-base font-mono leading-6 text-gray-900"
             >
-              Mebellar
-            </NavLink>
-            <NavLink
-              to={"/design"}
-              className="text-base font-mono leading-6 text-gray-900"
-            >
-              Dizaynlar
-            </NavLink>
-            <NavLink
-              to={"/installment"}
-              className="text-base font-mono leading-6 text-gray-900"
-            >
-              To'lov rejasi
+             Ustunliklar
             </NavLink>
             <NavLink
               to={"/contact"}
@@ -88,27 +77,7 @@ const Header = () => {
               <p>0</p>
             </NavLink> */}
           </div>
-          {}
-          <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-            {JSON.parse(localStorage.getItem("user_data")) ? (
-              <NavLink
-                to={"/login"}
-                onClick={() => {
-                  localStorage.removeItem("user_data");
-                }}
-                className="text-base font-semibold leading-6 hover:bg-slate-600 transition-colors bg-[#1F2937] text-white py-2 px-4 rounded"
-              >
-                Chiqish <span aria-hidden="true">&rarr;</span>
-              </NavLink>
-            ) : (
-              <NavLink
-                to={"/login"}
-                className="text-base font-semibold leading-6 hover:bg-slate-600 transition-colors bg-[#1F2937] text-white py-2 px-4 rounded"
-              >
-                Kirish <span aria-hidden="true">&rarr;</span>
-              </NavLink>
-            )}
-          </div>
+        
         </nav>
         <div
           ref={hidden}
