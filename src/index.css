@@ -1,0 +1,167 @@
+@import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --blue: #dfecfa;
+  --white: #ffffff;
+}
+body {
+  background-color: white;
+}
+
+a {
+  text-decoration: none !important;
+  font-weight: 600;
+}
+.common_title {
+  font-size: 40px;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 80px;
+}
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+/* Responsive font-size */
+html {
+  font-size: 16px;
+}
+
+/* Container */
+/* .container {
+  width: 100% !important;
+} */
+.containerr {
+  width: 100% !important;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  margin: 0 auto;
+}
+
+button {
+  outline: none;
+  border: none;
+}
+button:focus {
+  outline: none;
+  border: none;
+}
+
+/* Font-family */
+.inter {
+  font-family: "Inter", sans-serif;
+}
+
+.advantage{
+  padding: 0 10rem;
+  margin-bottom: 9rem;
+}
+
+.floating-icons {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.icon.telegram {
+  background-color: #2792DAFF;
+}
+.floating-icons i{
+  font-size: 28px;
+  color: #fff;
+}
+.icon.phone {
+  background-color: #19CC19FF;
+}
+
+.icon:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Telegram animation */
+@keyframes telegram-bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes phone-bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.icon.telegram {
+  animation: telegram-bounce 2s infinite;
+}
+
+.icon.phone {
+  animation: phone-bounce 2s infinite;
+}
+
+
+@media only screen and (max-width: 1024px) {
+  html {
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width: 780px) {
+  html {
+    font-size: 12px;
+  }
+}
+@media only screen and (max-width: 540px) {
+  html {
+    font-size: 10px;
+  }
+  .advantage{
+    padding: 0 1rem;
+    margin-bottom: 5rem;
+  }
+}
