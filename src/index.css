@@ -51,6 +51,13 @@ button:focus-visible {
 html {
   font-size: 16px;
 }
+.custom-accordion-header{
+  font-size: 25px;
+  font-weight: bold;
+}
+.custom-accordion-body{
+  font-size: 18px;
+}
 
 /* Container */
 /* .container {
@@ -233,9 +240,216 @@ button:focus {
   padding: 2rem;
 }
 
+#myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg:hover {
+  opacity: 0.7;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 50;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 50px;
+  gap: 10px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100dvh;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+.modal-content,
+#caption {
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+@-webkit-keyframes zoom {
+  from {
+    -webkit-transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+  }
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.design_wrapper {
+  display: grid;
+  margin-bottom: 150px;
+  gap: 30px;
+  grid-template-areas:
+    "d1 d1 d1 d1 d2 d2 d2 d2 d3 d3 d3 d3"
+    "d4 d4 d4 d5 d5 d5 d6 d6 d6 d7 d7 d7"
+    "d8 d8 d8 d8 d9 d9 d9 d9 d10 d10 d10 d10"
+    "d11 d11 d11 d12 d12 d12 d13 d13 d13 d14 d14 d14";
+}
+.design_wrapper + div {
+  height: 320px;
+  transition: 0.3s transform;
+  border-radius: 25px;
+  
+}
+
+.design_wrapper div img {
+  height: 100%;
+  width: 100%;
+  transition: 0.3s transform;
+  border-radius: 25px;
+}
+
+.design_wrapper .modal img {
+  min-height: 550px;
+  border-radius: 5px;
+  object-fit: cover;
+}
+.design_wrapper .modal img:hover {
+  transform: scale(1);
+}
+.design_wrapper img:hover {
+  transform: scale(1.08);
+}
+
+.d1 {
+  grid-area: d1;
+  width: 100%;
+  position: relative;
+}
+.d2 {
+  grid-area: d2;
+  width: 100%;
+  position: relative;
+}
+.d3 {
+  grid-area: d3;
+  width: 100%;
+  position: relative;
+}
+.d4 {
+  grid-area: d4;
+  width: 100%;
+  position: relative;
+}
+.d5 {
+  grid-area: d5;
+  width: 100%;
+  position: relative;
+}
+.d6 {
+  grid-area: d6;
+  width: 100%;
+  position: relative;
+}
+.d7 {
+  grid-area: d7;
+  width: 100%;
+  position: relative;
+}
+.d8 {
+  grid-area: d8;
+  width: 100%;
+  position: relative;
+}
+.d9 {
+  grid-area: d9;
+  width: 100%;
+  position: relative;
+}
+.d10 {
+  grid-area: d10;
+  width: 100%;
+  position: relative;
+}
+.d11 {
+  grid-area: d11;
+  width: 100%;
+  position: relative;
+}
+.d12 {
+  grid-area: d12;
+  width: 100%;
+  position: relative;
+}
+.d13 {
+  grid-area: d13;
+  width: 100%;
+  position: relative;
+}
+.d14 {
+  grid-area: d14;
+  width: 100%;
+  position: relative;
+}
 @media only screen and (max-width: 540px) {
   html {
     font-size: 10px;
+  }
+  
+  .close {
+    top: 0px;
+    right: 20px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  .custom-accordion-header{
+    font-size: 20px;
+  }
+  .custom-accordion-body{
+    font-size: 12px;
   }
 
   .advantage {
@@ -296,5 +510,30 @@ button:focus {
   #carouselHome .carousel-control-prev,
   #carouselHome .carousel-control-next {
     width: 40px;
+  }
+  .design_wrapper {
+    display: grid;
+    margin-bottom: 100px;
+    gap: 10px;
+    grid-template-areas:
+      "d1 d2"
+      "d3 d4"
+      "d5 d6"
+      "d7 d8"
+      "d9 d10"
+      "d11 d12"
+      "d13 d14";
+  }
+  .design_wrapper img {
+    height: 300px;
+    transition: 0.3s transform;
+    border-radius: 15px;
+  }
+  .design_wrapper img:hover {
+    transform: scale(1.05);
+  }
+  .design_wrapper .modal img {
+    width: 100%;
+    margin-top: 30px;
   }
 }

@@ -59,10 +59,10 @@ const HeroCarousel = () => {
                     to={"/contact"}
                     className="rounded-md bg-cyan-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-cyan-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:bg-cyan-700"
                   >
-                    Buyurtma berish
+                    Biz bilan bog'laning
                   </Link>
                   <Link
-                    to={"/furnitures"}
+                    to={"/more"}
                     className="text-sm font-semibold leading-6 text-cyan-300 border-spacing-1 border-cyan-300"
                   >
                     Ko'proq ko'rish <span aria-hidden="true">→</span>
@@ -105,10 +105,10 @@ const HeroCarousel = () => {
                     to={"/contact"}
                     className="rounded-md bg-cyan-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-cyan-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:bg-cyan-700"
                   >
-                    Buyurtma berish
+                    Biz bilan bog'laning
                   </Link>
                   <Link
-                    to={"/furnitures"}
+                    to={"/more"}
                     className="text-sm font-semibold leading-6 text-cyan-300 border-spacing-1 border-cyan-300"
                   >
                     Ko'proq ko'rish <span aria-hidden="true">→</span>
@@ -149,10 +149,10 @@ const HeroCarousel = () => {
                     to={"/contact"}
                     className="rounded-md bg-cyan-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-cyan-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:bg-cyan-700"
                   >
-                    Buyurtma berish
+                    Biz bilan bog'laning
                   </Link>
                   <Link
-                    to={"/furnitures"}
+                    to={"/more"}
                     className="text-sm font-semibold leading-6 text-cyan-300 border-spacing-1 border-cyan-300"
                   >
                     Ko'proq ko'rish <span aria-hidden="true">→</span>

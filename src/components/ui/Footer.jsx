@@ -65,6 +65,14 @@ export default function Footer() {
                 </span>
                 <ul className="list-unstyled">
                   <li>
+                  <li>
+                    <Link
+                      className="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
+                      to="/more"
+                    >
+                      Ishlarimizdan namunalar
+                    </Link>
+                  </li>
                     <Link
                       className="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
                       to={"/question"}

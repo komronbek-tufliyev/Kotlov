@@ -58,6 +58,12 @@ const Header = () => {
             </NavLink>
 
             <NavLink
+              to={"/more"}
+              className="text-base font-mono leading-6 text-gray-900"
+            >
+              Ishlarimizdan namunalar
+            </NavLink>
+            <NavLink
               to={"/question"}
               className="text-base font-mono leading-6 text-gray-900"
             >
@@ -130,6 +136,17 @@ const Header = () => {
                       <i className="fa-solid fa-house"></i>
                       Bosh sahifa
                     </div>
+                    <i className="fa-solid fa-chevron-right"></i>
+                  </NavLink>
+                  <NavLink
+                    to={"/more"}
+                    className="-mx-3 rounded-lg px-3 py-4 text-lg font-semibold leading-7 text-gray-900 hover:bg-gray-50 flex justify-between border-b"
+                  >
+                    <div className="flex items-center gap-3">
+                      <i className="fa-regular fa-circle-question"></i>
+                      Ishlarimizdan namunalar
+                    </div>
+
                     <i className="fa-solid fa-chevron-right"></i>
                   </NavLink>
                   <NavLink
