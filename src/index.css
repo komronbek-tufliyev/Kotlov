@@ -56,11 +56,58 @@ html {
 /* .container {
   width: 100% !important;
 } */
-.containerr {
-  width: 100% !important;
-  padding-left: 4rem;
-  padding-right: 4rem;
-  margin: 0 auto;
+#carouselHome .carousel-control-prev-icon {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  background-size: 70% 70%;
+  background-color: transparent;
+  border: 1px solid #fff;
+}
+#carouselHome .carousel-control-next-icon {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  background-size: 70% 70%;
+  background-color: transparent;
+  border: 1px solid #fff;
+}
+#carouselHome .carousel-control-prev,
+#carouselHome .carousel-control-next {
+  width: 80px;
+}
+.bg_img1 {
+  background-image: linear-gradient(
+      to bottom,
+      rgb(0, 0, 0, 0.6),
+      rgb(0, 0, 0, 0.7)
+    ),
+    url("./assets/hero1.jpg");
+  background-size: 100% 600px;
+  width: 100%;
+  background-repeat: no-repeat;
+}
+.bg_img2 {
+  background-image: linear-gradient(
+      to bottom,
+      rgb(0, 0, 0, 0.6),
+      rgb(0, 0, 0, 0.7)
+    ),
+    url("./assets/hero7.jpg");
+  background-size: 100% 600px;
+  width: 100%;
+  background-repeat: no-repeat;
+}
+.bg_img3 {
+  background-image: linear-gradient(
+      to bottom,
+      rgb(0, 0, 0, 0.6),
+      rgb(0, 0, 0, 0.7)
+    ),
+    url("./assets/hero6.jpg");
+  background-size: 100% 600px;
+  width: 100%;
+  background-repeat: no-repeat;
 }
 
 button {
@@ -77,13 +124,14 @@ button:focus {
   font-family: "Inter", sans-serif;
 }
 
-.advantage{
+.advantage {
   padding: 0 10rem;
   margin-bottom: 9rem;
 }
 
 .floating-icons {
   position: fixed;
+  z-index: 10;
   bottom: 20px;
   right: 20px;
   display: flex;
@@ -103,14 +151,14 @@ button:focus {
 }
 
 .icon.telegram {
-  background-color: #2792DAFF;
+  background-color: #2792daff;
 }
-.floating-icons i{
+.floating-icons i {
   font-size: 28px;
   color: #fff;
 }
 .icon.phone {
-  background-color: #19CC19FF;
+  background-color: #19cc19ff;
 }
 
 .icon:hover {
@@ -120,7 +168,8 @@ button:focus {
 
 /* Telegram animation */
 @keyframes telegram-bounce {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateY(0);
   }
   50% {
@@ -129,7 +178,8 @@ button:focus {
 }
 
 @keyframes phone-bounce {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateY(0);
   }
   50% {
@@ -145,23 +195,106 @@ button:focus {
   animation: phone-bounce 2s infinite;
 }
 
+/* Location page start */
+.map_wrap {
+  display: grid;
+  align-items: center;
+  grid-template-columns: auto auto auto;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  padding: 0px;
+}
+.map_wrap svg {
+  width: 50px;
+}
+.map_item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
+}
 
-@media only screen and (max-width: 1024px) {
-  html {
-    font-size: 14px;
-  }
+.c_border {
+  border: 1px solid;
+  padding: 0.45rem 0.805rem;
+  border-radius: 0.375rem;
 }
-@media only screen and (max-width: 780px) {
-  html {
-    font-size: 12px;
-  }
+/* Location page end */
+
+.user-content p {
+  margin-top: 5px;
+  font-size: 12px;
 }
+
+.ratings i {
+  color: blue;
+}
+.testimonial {
+  padding: 2rem;
+}
+
 @media only screen and (max-width: 540px) {
   html {
     font-size: 10px;
   }
-  .advantage{
+
+  .advantage {
     padding: 0 1rem;
     margin-bottom: 5rem;
+  }
+  .floating-icons {
+    bottom: 15px;
+    right: 15px;
+    gap: 10px;
+  }
+  
+  .icon {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .floating-icons i {
+    font-size: 18px;
+    color: #fff;
+  }
+  .testimonial {
+    padding: 1rem !important;
+  }
+  .bg_img1 {
+    background-size: 100% 350px;
+  }
+  .bg_img2 {
+    background-size: 100% 350px;
+  }
+  .bg_img3 {
+    background-size: 100% 350px;
+  }
+  .map_wrap {
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 0px;
+  }
+  .map_item {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+  }
+  .map_item svg{
+    width: 35px;
+  }
+  #carouselHome .carousel-control-prev-icon {
+    width: 20px;
+    height: 20px;
+  }
+  #carouselHome .carousel-control-next-icon {
+    width: 20px;
+    height: 20px;
+  }
+  #carouselHome .carousel-control-prev,
+  #carouselHome .carousel-control-next {
+    width: 40px;
   }
 }
