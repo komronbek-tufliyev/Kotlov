@@ -30,7 +30,7 @@ export default function Footer() {
               Toshkent shahar va Toshkent viloyatida isitish tizimini ta'mirlash
               xizmati va texnik xizmat ko'rsatish
             </h5>
-            <div className="my-9 flex gap-3">
+            {/* <div className="my-9 flex gap-3">
               <button
                 className="bg-white text-blue-400 shadow-lg font-normal h-10 w-10 flex items-center justify-center rounded-full outline-none focus:outline-none"
                 type="button"
@@ -55,7 +55,7 @@ export default function Footer() {
               >
                 <i className="flex fab fa-github"></i>
               </button>
-            </div>
+            </div> */}
           </div>
           <div className="w-full lg:w-7/12 px-4">
             <div className="flex flex-wrap items-top mb-6">
@@ -98,20 +98,19 @@ export default function Footer() {
                   <li>
                     <div className="text-gray-700 hover:text-gray-900 font-semibold pb-2 text-sm flex items-center gap-1">
                       <i className="fa-solid fa-phone"></i>
-                      +998(97) 155-60-60
+                      +998(33) 634-99-99
                     </div>
                   </li>
                   <li>
                     <div className="text-gray-700 hover:text-gray-900 font-semibold pb-2 text-sm flex items-center gap-1">
                       <i className="fa-solid fa-envelope"></i>
-                      sohibjon@gmail.com
+                      abrayev@gmail.com
                     </div>
                   </li>
                   <li>
                     <div className="text-gray-700 hover:text-gray-900 font-semibold pb-2 text-sm flex items-center gap-1">
                       <i className="fa-solid fa-location-dot"></i>
-                      Toshkent shahri, r. Mirzo Ulug'bek ko'chasi Mirzo
-                      Ulug'bek, 46 yosh
+                      Toshkent shahar, Yakkasaroy tumani, Choshtepa ko'chasi
                     </div>
                   </li>
                 </ul>

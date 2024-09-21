@@ -4,7 +4,7 @@ import Navbar from "../components/ui/Navbar";
 const DesktopLayout = ({ children }) => {
   const content = (
     <div>
-      <p className="">+998976005050</p>
+      <p className="font-bold">+998(33) 634-99-99</p>
     </div>
   );
   return (
@@ -25,7 +25,7 @@ const DesktopLayout = ({ children }) => {
           </div>
         </Popover>
         <a
-          href="https://t.me/yourusername"
+          href="https://t.me/Abdumalik_Abrayev"
           target="_blank"
           rel="noopener noreferrer"
         >

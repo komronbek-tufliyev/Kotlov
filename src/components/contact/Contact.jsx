@@ -27,7 +27,7 @@ const Contact = () => {
             <div className="contact_content">
               <h3>Manzil:</h3>
               <p>
-                Toshkent shahar, Yunusobod tumani, Amir Temur ko'chasi, 114-uy
+              Toshkent shahar, Yakkasaroy tumani, Choshtepa ko'chasi
               </p>
             </div>
           </div>
@@ -37,7 +37,7 @@ const Contact = () => {
             </div>
             <div className="contact_content">
               <h3>Telefon raqam:</h3>
-              <p>+998 (91) 474-78-18</p>
+              <p> +998(33) 634-99-99</p>
             </div>
           </div>
           <div className="contact_item">
@@ -46,7 +46,7 @@ const Contact = () => {
             </div>
             <div className="contact_content">
               <h3>E-mail</h3>
-              <p>info@mebel.uz</p>
+              <p>abrayev@gmail.com</p>
             </div>
           </div>
           <div className="contact_item">

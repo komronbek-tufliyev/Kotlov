@@ -1,6 +1,10 @@
+import { Select } from "antd";
 import { useRef } from "react";
 import { Link, NavLink } from "react-router-dom";
+import uzb from "../../assets/flag_uzb.png";
+import rus from "../../assets/flag_rus.png";
 
+const { Option } = Select;
 const Header = () => {
   const hidden = useRef();
   function openNavbarFunction() {
@@ -23,10 +27,33 @@ const Header = () => {
                 src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
                 alt=""
               />
-              <span className="text-slate-700 font-bold text-2xl">Kotlov</span>
+              <span className="text-slate-700 font-bold text-2xl">
+                TrueTemp Heating
+              </span>
             </Link>
           </div>
           <div className="flex lg:hidden gap-4">
+          <Select
+              defaultValue={"uzb"}
+              style={{
+                width: 80,
+              }}
+              onChange={(value) => console.log(`Selected language ${value}`)}
+              placeholder="Select a country"
+            >
+              <Option value="uzb">
+                <div className="flex items-center justify-center gap-1 text-base">
+                  <img src={uzb} alt="UZB" style={{ width: 14 }} />
+                  UZB
+                </div>
+              </Option>
+              <Option value="rus">
+                <div className="flex items-center justify-center gap-1 text-base">
+                  <img src={rus} alt="RUS" style={{ width: 14 }} />
+                  RUS
+                </div>
+              </Option>
+            </Select>
             <button
               onClick={() => openNavbarFunction()}
               type="button"
@@ -76,10 +103,27 @@ const Header = () => {
               Aloqa
             </NavLink>
 
-            {/* <NavLink to={"/saved"} className="w-[30px] h-[30px] header_img">
-              <img className="object-cover" src={saved} alt="" />
-              <p>0</p>
-            </NavLink> */}
+            <Select
+              defaultValue={"uzb"}
+              style={{
+                width: 100,
+              }}
+              onChange={(value) => console.log(`Selected language ${value}`)}
+              placeholder="Select a country"
+            >
+              <Option value="uzb">
+                <div className="flex items-center gap-2">
+                  <img src={uzb} alt="UZB" style={{ width: 16 }} />
+                  UZB
+                </div>
+              </Option>
+              <Option value="rus">
+                <div className="flex items-center gap-2">
+                  <img src={rus} alt="RUS" style={{ width: 16 }} />
+                  RUS
+                </div>
+              </Option>
+            </Select>
           </div>
         </nav>
         <div
@@ -124,6 +168,7 @@ const Header = () => {
                   />
                 </svg>
               </button>
+              
             </div>
             <div className="mt-6 flow-root">
               <div className="-my-6 divide-y divide-gray-500/10">
