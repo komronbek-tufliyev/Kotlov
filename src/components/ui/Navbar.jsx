@@ -1,44 +1,54 @@
 import { Select } from "antd";
-import { useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import uzb from "../../assets/flag_uzb.png";
 import rus from "../../assets/flag_rus.png";
+import logo1 from "../../assets/logo1.png";
+import { useTranslation } from "react-i18next";
 
 const { Option } = Select;
 const Header = () => {
   const hidden = useRef();
+  const { t, i18n } = useTranslation();
+  const [lang, setLang] = useState(localStorage.getItem("lang") || "uzb"); 
+  const changeLanguage = (lng) => {
+    localStorage.setItem("lang", lng);
+    setLang(lng);
+  };
+  
+  useEffect(() => {
+    i18n.changeLanguage(lang);
+  }, [lang, i18n])
+
   function openNavbarFunction() {
     hidden.current?.classList.remove("hidden");
   }
   function closeNavbarFunction() {
     hidden.current?.classList.add("hidden");
   }
+
   return (
     <>
       <header className="sticky top-0 z-50 bg-white shadow-md">
         <nav
-          className="flex items-center justify-between p-6 lg:px-20"
+          className="flex items-center justify-between px-6 py-3 lg:px-20"
           aria-label="Global"
         >
           <div className="flex lg:flex-1">
             <Link to={"/"} className="-m-1.5 p-1.5 flex items-center gap-2">
-              <img
-                className="h-8 w-auto"
-                src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
-                alt=""
-              />
+              <img className="h-12 w-auto" src={logo1} alt="" />
               <span className="text-slate-700 font-bold text-2xl">
                 TrueTemp Heating
               </span>
             </Link>
           </div>
           <div className="flex lg:hidden gap-4">
-          <Select
-              defaultValue={"uzb"}
+            <Select
+              defaultValue={lang}
               style={{
                 width: 80,
               }}
-              onChange={(value) => console.log(`Selected language ${value}`)}
+              onChange={(value) => changeLanguage(value)}
               placeholder="Select a country"
             >
               <Option value="uzb">
@@ -50,7 +60,7 @@ const Header = () => {
               <Option value="rus">
                 <div className="flex items-center justify-center gap-1 text-base">
                   <img src={rus} alt="RUS" style={{ width: 14 }} />
-                  RUS
+                  РУС
                 </div>
               </Option>
             </Select>
@@ -81,34 +91,34 @@ const Header = () => {
               to={"/"}
               className={`text-base font-mono leading-6 text-gray-900`}
             >
-              Bosh sahifa
+              {t("navbar.home")}
             </NavLink>
 
             <NavLink
               to={"/more"}
               className="text-base font-mono leading-6 text-gray-900"
             >
-              Ishlarimizdan namunalar
+              {t("navbar.example")}
             </NavLink>
             <NavLink
               to={"/question"}
               className="text-base font-mono leading-6 text-gray-900"
             >
-              Savollarga javoblar
+              {t("navbar.questions")}
             </NavLink>
             <NavLink
               to={"/contact"}
               className="text-base font-mono leading-6 text-gray-900"
             >
-              Aloqa
+              {t("navbar.contact")}
             </NavLink>
 
             <Select
-              defaultValue={"uzb"}
+              defaultValue={lang}
               style={{
                 width: 100,
               }}
-              onChange={(value) => console.log(`Selected language ${value}`)}
+              onChange={(value) => changeLanguage(value)}
               placeholder="Select a country"
             >
               <Option value="uzb">
@@ -120,7 +130,7 @@ const Header = () => {
               <Option value="rus">
                 <div className="flex items-center gap-2">
                   <img src={rus} alt="RUS" style={{ width: 16 }} />
-                  RUS
+                  РУС
                 </div>
               </Option>
             </Select>
@@ -145,7 +155,7 @@ const Header = () => {
                   alt=""
                 />
                 <span className="text-slate-700 font-bold text-2xl">
-                  Kotlov
+                TrueTemp Heating
                 </span>
               </Link>
               <button
@@ -168,7 +178,6 @@ const Header = () => {
                   />
                 </svg>
               </button>
-              
             </div>
             <div className="mt-6 flow-root">
               <div className="-my-6 divide-y divide-gray-500/10">
@@ -179,7 +188,7 @@ const Header = () => {
                   >
                     <div className="flex items-center gap-3">
                       <i className="fa-solid fa-house"></i>
-                      Bosh sahifa
+                      {t('navbar.home')}
                     </div>
                     <i className="fa-solid fa-chevron-right"></i>
                   </NavLink>
@@ -189,7 +198,7 @@ const Header = () => {
                   >
                     <div className="flex items-center gap-3">
                       <i className="fa-regular fa-circle-question"></i>
-                      Ishlarimizdan namunalar
+                      {t('navbar.example')}
                     </div>
 
                     <i className="fa-solid fa-chevron-right"></i>
@@ -200,7 +209,7 @@ const Header = () => {
                   >
                     <div className="flex items-center gap-3">
                       <i className="fa-regular fa-circle-question"></i>
-                      Savollarga javoblar
+                      {t('navbar.questions')}
                     </div>
 
                     <i className="fa-solid fa-chevron-right"></i>
@@ -211,7 +220,7 @@ const Header = () => {
                   >
                     <div className="flex items-center gap-3">
                       <i className="fa-solid fa-phone-volume"></i>
-                      Aloqa
+                      {t('navbar.contact')}
                     </div>
                     <i className="fa-solid fa-chevron-right"></i>
                   </NavLink>

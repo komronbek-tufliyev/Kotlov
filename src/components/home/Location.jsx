@@ -1,11 +1,18 @@
-import { Location1, Location2, Location3 } from "../../assets/Location";
+import { useTranslation } from "react-i18next";
+import { Location1 } from "../../assets/Location";
+import { useEffect } from "react";
 
 const Location = () => {
+  const { t, i18n } = useTranslation();
+
+  useEffect(() => {
+    i18n.changeLanguage(localStorage.getItem("lang") || "uzb");
+  }, [i18n]);
   return (
     <div className="container sm:py-20 py-10">
       <div className="text-center max-w-xl mx-auto">
         <h1 className="text-3xl sm:text-5xl font-bold sm:mb-5 mb-3 text-gray-600">
-          Bizning manzilimiz
+          {t("locations.title")}
         </h1>
         <div className="text-center mb-4 sm:mb-10">
           <span className="inline-block w-1 h-1 rounded-full bg-orange-500 ml-1"></span>
@@ -15,14 +22,14 @@ const Location = () => {
           <span className="inline-block w-1 h-1 rounded-full bg-orange-500 ml-1"></span>
         </div>
       </div>
-      <div className="map_wrap my-5 sm:my-0">
+      <div className="map_wrap my-5">
         <div className="map_item">
           <Location1 />
-          <p className="text-gray-600 font-semibold sm:text-lg text-xl leading-8">
-            Oʻzbekiston, Toshkent shah, Amir Temur koʻch, Yunusobod
+          <p className="text-gray-600 font-semibold sm:text-lg text-xl">
+            {t("locations.subtitle")}
           </p>
         </div>
-        <div className="map_item">
+        {/* <div className="map_item">
           <Location2 />
           <p className="text-gray-600 font-semibold sm:text-lg text-xl leading-8">
             Universam bozoridan 3 daqiqa
@@ -33,7 +40,7 @@ const Location = () => {
           <p className="text-gray-600 font-semibold sm:text-lg text-xl leading-8">
             Aeroportdan 8 daqiqa
           </p>
-        </div>
+        </div> */}
       </div>
 
       <div style={{ position: "relative", overflow: "hidden" }}>

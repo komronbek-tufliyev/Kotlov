@@ -1,8 +1,20 @@
+import { Helmet } from "react-helmet";
 import Contact from "../components/contact/Contact";
 
 const NumberOfStudents = () => {
   return (
-    <div className="mb-0">
+    <div className="mb-0 container">
+      <Helmet>
+        <title>Сервис сентер катёл</title>
+        <meta
+          name="description"
+          content="Katyol va gaz qozonlari uchun professional ta'mirlash xizmati: katyol remont, katyol usta, gaz qozonlarini ta'mirlash, xizmat ko'rsatish markazi. Ustalarimiz katyolingizni tez va sifatli ta'mirlaydi. Газовые котлы: ремонт и обслуживание в вашем регионе."
+        />
+        <meta
+          name="keywords"
+          content="katyol remont, катёл ремонт, кател ремонт, remont katyol, ремонт катёл, ремонт кател, katyol usta, katyol ustasi, катёл уста, кател устаси, мастер котлов, кател мастер, сервис сентер катёл, service centre gas boiler, fix gas boiler, master gas boiler, katyol, катёл, кател"
+        />
+      </Helmet>
       <Contact />
       <div className="container sm:mb-20 mb-16" style={{ position: "relative", overflow: "hidden" }}>
         <a

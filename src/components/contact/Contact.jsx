@@ -3,13 +3,20 @@ import phone from "../../assets/icons8-phone-50.png";
 import mail from "../../assets/icons8-mail-50.png";
 import clock from "../../assets/icons8-clock-50.png";
 import "./style.css";
+import { useTranslation } from "react-i18next";
+import { useEffect } from "react";
 const Contact = () => {
+  const { t, i18n } = useTranslation();
+
+  useEffect(() => {
+    i18n.changeLanguage(localStorage.getItem("lang") || "uzb");
+  }, [i18n]);
   return (
     <div className="container">
       <div className="min-h-[90dvh] px-6 lg:px-32 mx-auto">
         <div className="text-center max-w-xl mx-auto">
           <h1 className="text-3xl sm:text-5xl font-bold mt-12 sm:mb-5 mb-3 text-gray-600">
-            Biz bilan bog'laning
+          {t("contact.title")}
           </h1>
           <div className="text-center mb-6 sm:mb-12">
             <span className="inline-block w-1 h-1 rounded-full bg-orange-500 ml-1"></span>
@@ -25,9 +32,9 @@ const Contact = () => {
               <img src={location} alt="" />
             </div>
             <div className="contact_content">
-              <h3>Manzil:</h3>
+              <h3>{t("contact.bold1")}</h3>
               <p>
-              Toshkent shahar, Yakkasaroy tumani, Choshtepa ko'chasi
+              {t("contact.text1")}
               </p>
             </div>
           </div>
@@ -36,8 +43,8 @@ const Contact = () => {
               <img src={phone} alt="" />
             </div>
             <div className="contact_content">
-              <h3>Telefon raqam:</h3>
-              <p> +998(33) 634-99-99</p>
+              <h3>{t("contact.bold2")}</h3>
+              <p>+998(33) 634-99-99</p>
             </div>
           </div>
           <div className="contact_item">
@@ -45,7 +52,7 @@ const Contact = () => {
               <img src={mail} alt="" />
             </div>
             <div className="contact_content">
-              <h3>E-mail</h3>
+              <h3>{t("contact.bold3")}</h3>
               <p>abrayev@gmail.com</p>
             </div>
           </div>
@@ -54,8 +61,8 @@ const Contact = () => {
               <img src={clock} alt="" />
             </div>
             <div className="contact_content">
-              <h3>Ish vaqti / Ish tartibi</h3>
-              <p>Har kuni 08:00 dan 22:00 gacha</p>
+              <h3>{t("contact.bold4")}</h3>
+              <p>{t("contact.text4")}</p>
             </div>
           </div>
         </div>

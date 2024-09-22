@@ -1,0 +1,122 @@
+{
+  "navbar": {
+    "home": "Bosh sahifa",
+    "example": "Ishlarimizdan namunalar",
+    "questions": "Savollarga javoblar",
+    "contact": "Aloqa"
+  },
+  "footer": {
+    "title": "Biz bilan bog'laning",
+    "subtitle": "Toshkent shahar va Toshkent viloyatida isitish tizimini ta'mirlash xizmati va texnik xizmat ko'rsatish",
+    "links": "Saytdagi linklar",
+    "link1": "Ishlarimizdan namunalar",
+    "link2": "Savollarga javoblar",
+    "link3": "Aloqa",
+    "contacts": "Bizning kontaktlarimiz",
+    "location": "Toshkent shahar, Yakkasaroy tumani, Choshtepa ko'chasi",
+    "reserved": "Barcha huquqlar himoyalangan."
+  },
+  "hero": {
+    "link": "Sizni qiziqtirgan savollarga javoblarni ko'rish",
+    "title1": "Uyda isitish uskunalarini tez va sifatli ta'mirlash",
+    "subtitle1": "3000 dan ortiq mijozlar bizga ishonishadi. Sizga xizmatlarimizni taklif qilishdan mamnun bo'lamiz.",
+    "title2": "Diagnostika va bepul maslahatlar",
+    "subtitle2": "Biz shartnoma bo'yicha qat'iy ishlaymiz va usta buyurtma qilgan kuningiz albatta keladi",
+    "title3": "Ishonchli va hayratda qoldiradigan arzon narxlar",
+    "subtitle3": "Mijozlarimiz tomonidan qo'yilgan murakkab muammolarni hal qilish",
+    "contact": "Biz bilan bog'laning",
+    "more": "Ko'proq ko'rish"
+  },
+  "services": {
+    "title": "Bizning sizga taklif qiladigan xizmatlarimiz",
+    "title1": "Biz 24/7 ishlaymiz",
+    "text1": "Bizning xizmat ko'rsatish markazimiz sizning qo'ng'iroqlaringizni kechayu kunduz qabul qilishga tayyor.",
+    "title2": "Diagnostika",
+    "text2": "Mutaxassislar qozonning noto'g'ri ishlashining manbasini tezda aniqlaydilar",
+    "title3": "Ta'mirlash",
+    "text3": "Mijozlar uchun arzon narxda mukammal ta'mirlash xizmati",
+    "title4": "Bizning kompaniyamiz shu sohada 12 yildan ortiq vaqtdan beri mavjud",
+    "text41": "Avvalo, sanoatda ko'p yillar davomida to'plangan tajriba va bilimimiz bizni bozorda boshqalardan ajratib turadi.", 
+    "text42": "Bizning xodimlarimiz eng yuqori darajadagi haqiqiy professionallar, ularning har biri o'z sohasining mutaxassisi. Mutaxassislarimiz innovatsion yechimlarni yaratishga qodir ekanliklari va doimo takomillashayotganidan faxrlanamiz.",
+    "title5": "Bizning maqsad",
+    "text5": "Bizning kompaniyamiz doimo mijozlarimizning ehtiyojlari va umidlariga e'tibor qaratadi. Bizning muvaffaqiyatimiz ularning qoniqishiga bog'liqligini aniq tushunamiz."
+  },
+  "errors": {
+    "title": "Qozonxonalar bilan bog'liq eng keng tarqalgan xatolar",
+    "subtitle": "Biz quyidagi keng tarqalgan xatolarni muammosiz tuzatamiz.",
+    "text1": "sovutish suvi bosimining yetarli emasligi",
+    "text2": "yonish bilan bog'liq muammolar",
+    "text3": "isitish harorati sensori shikastlanishi"
+  },
+  "clients": {
+    "title": "Biz haqimizda mijozlarimizning fikri",
+    "client1": "Rustam aka",
+    "text1": "Bizning katyolimiz qishda birdan ishlamay qoldi, va bu biz uchun katta muammo edi. Ustalar xabarimizdan so‘ng juda tez yetib kelishdi. Ular katyolni sinchiklab tekshirishdi va muammo qayerda ekanini tezda aniqlashdi. Ta'mirlash ishlari ham qisqa vaqt ichida amalga oshirildi. Ustalar juda professional va samimiy edilar. Bizning katyol endi juda yaxshi ishlayapti va bu xizmatni barchaga tavsiya qilaman!",
+    "client4": "Dilnoza opa",
+    "text4": "Menda ilgari katyol bilan bog‘liq juda ko‘p muammolar bo‘lgan, lekin bu xizmat bilan ishlar boshqacha bo‘ldi. Ustalar nafaqat katyolni ta'mirlab, balki qanday qilib undan to‘g‘ri foydalanish kerakligini ham batafsil tushuntirishdi. Ularning yondashuvi menga juda ma'qul bo‘ldi. Ta'mir ishlari qisqa vaqt ichida hal qilindi va ular hamma narsani tartibda qoldirishdi. Bu xizmatni juda tavsiya qilaman!",
+    "client3": "Bekzod",
+    "text3": "Katyolimiz to‘satdan ishdan chiqdi va uyda sovuq bo‘lib qoldi. Ustalarni chaqirganimda, ular juda tez yetib kelishdi va katyolni tezda tuzatib berishdi. Ular ishlash jarayonida aniq va toza ish qilishdi, bu juda e'tiborni tortdi. Endi katyolimiz yanada samaraliroq ishlayapti va ustalar o‘z ishlarini a'lo darajada bajardilar. Menda faqat ijobiy fikrlar qoldi!",
+    "client2": "Nargiza opa",
+    "text2": "Uyimizdagi gaz qozoni muntazam nosozliklar bilan ishlayotgan edi, va biz ustalarga ko‘p marta murojaat qilganmiz. Ammo bu xizmatdan olingan natijalar kutilganidan ham yaxshiroq bo‘ldi. Ustalar barcha muammolarni tez va aniq hal qilishdi. Ular juda bilimli va tajribali, shuningdek, ishlash jarayonida bizga yordam berish va maslahat berishda juda sabrli edilar. Narxlari ham juda hamyonbop va adolatli. Endi bizning qozonimiz ideal holatda ishlayapti!",
+    "client5": "Shavkat aka",
+    "text5": "Birinchi marta katyolimiz bilan muammoga duch kelganimda, juda ko‘p ustalarga murojaat qildim, lekin hech kim muammoni hal qila olmadi. Nihoyat, bu ustalar bilan bog‘langanimda, ular muammoni tezda topishdi va juda professional tarzda tuzatishdi. Endi katyolimiz yana avvalgidek ishlayapti, hatto yanada yaxshiroq. Ularning xizmatidan juda mamnunman va bunday malakali ustalar bilan ishlashimga xursandman!",
+    "client6": "Alisher bobo",
+    "text6": "Bizda gaz qozoni bilan jiddiy muammo paydo bo‘ldi va tezda ustalarni chaqirishga majbur bo‘ldik. Bu xizmatni tavsiya qilishganidan keyin murojaat qildim va ustalar juda tez yetib kelishdi. Ular qozonni tezda tekshirishdi va qisqa vaqt ichida tuzatishdi. Ularning kasbiy mahorati va xizmat ko‘rsatish madaniyati juda yuqori ekan. Ustalar hamma narsani tushuntirib, keyingi foydalanish bo‘yicha foydali maslahatlar berishdi. Endi qozonimiz a'lo darajada ishlamoqda. Bundan keyin ham faqat shu ustalar bilan ishlashni rejalashtirdim."
+  },
+  "locations": {
+    "title": "Bizning manzilimiz",
+    "subtitle": "Toshkent shahar, Yakkasaroy tumani, Choshtepa ko'chasi"
+  },
+  "form": {
+    "title": "Biz sizga quyidagilarni taklif qilamiz!",
+    "subtitle": "Biz yuqori sifatli mahsulot va xizmatlarni taqdim etamiz, mijozlar so'rovlariga tez va moslashuvchan javob beramiz va individual yondashuvni ta'minlaymiz. Eng so'nggi tendentsiyalar va o'zgarishlardan xabardor bo'lish uchun biz doimo bozorni o'rganamiz va tahlil qilamiz.",
+    "bold1": "Qulay narx",
+    "text1": "Narxlarni biznikidan pastroq topdingizmi? Biz uskunani raqobatchimizdan 10% arzonroq ta'mirlaymiz.",
+    "bold2": "Professionalizm",
+    "text2": "Bizning jamoamiz 11 yildan ortiq tajribaga ega hunarmandlardan iborat.",
+    "bold3": "Sifatni tekshirish",
+    "text3": "Biz ish va o'rnatilgan ehtiyot qismlar uchun 6 oy kafolat beramiz.",
+    "ftitle": "Biz bilan bog'lanishni istaysizmi?",
+    "fsubtitle": "Bu formani to'ldiring va 24 soat ichida sizga jabob beriladi.",
+    "label1": "Ism-familiya",
+    "pl1": "Sohibjon Abdialimov",
+    "label2": "E-Mail yoki telefon raqam",
+    "pl2": "+998976365656",
+    "label3": "Xabar",
+    "pl3": "Xabar yozing...",
+    "btn": "Xabar jo'natish"
+  },
+  "examples": {
+    "title": "Ishlarimizdan namunalar",
+    "text": "Ishlarimizdan namunalar"
+  },
+  "answers": {
+    "title": "Ko'plab beriladigan savollarga javoblar",
+    "question1": "Ikki pallali gazli qozon qanday ishlaydi?",
+    "text1": "Ikki pallali gazli qozonlarda ikkita sxema issiqlik almashtirgichdan o'tadi: biri isitish uchun, ikkinchisi issiq suv ta'minoti uchun. Ular bir vaqtning o'zida ishlay olmaydilar. Foydalanuvchi issiq suv kranini ochganda, avtomatlashtirish isitishni o'chiradi va issiq suv aylanishini ishga tushiradi. Bu xususiyatni kamchilik deb hisoblamaslik kerak. Isitmasdan, tashqi sharoitga qarab, xona taxminan 2 soatdan keyin sovuq bo'ladi. Issiq suvning uzluksiz ta'minoti sezilarli darajada qisqaroq vaqtni oladi. Ikki pallali gazli qozonlarning ixcham o'lchamlari afzallik sifatida qayd etilgan. Ular sizga ushbu mini-qozonxonani standart kvartiraning oshxonasiga joylashtirishga imkon beradi.",
+    "question2": "Yillik texnik ko'rikdan o'tishda mutaxassis nima qilishi kerak?",
+    "text2": "Gazli qozonga texnik xizmat ko'rsatish xizmat ko'rsatish markazining mutaxassisi tomonidan isitish mavsumi boshlanishidan oldin amalga oshiriladi. Gaz va elektr ta'minotini o'chirish kerak. Qozon korpusi demontaj qilinadi va birinchi navbatda olib tashlanishi kerak bo'lgan yonish kamerasi, issiqlik almashtirgich va ko'krak tozalanadi (siz yuvish vositalaridan foydalanishingiz mumkin). Qozon ichidagi chang siqilgan havo bilan chiqariladi. Asosiy komponentlar joyiga o'rnatilgandan so'ng, texnik gaz bosimini tekshiradi. Keyin nozul o'rnatiladi. Yonish mahsulotlarini tahlil qiluvchi maxsus uskunalar yordamida sozlamalarning to'g'riligi tekshiriladi. Shuningdek, ular xavfsizlik klapanlari, sensorlar va nasoslarning xizmat ko'rsatish qobiliyatiga e'tibor berishadi. Ish tugagandan so'ng, qozon egasiga texnik ko'rikdan o'tkazilganligi to'g'risida hisobot beriladi.",
+    "question3": "Gaz qozonlari qanchalik xavfsiz?",
+    "text3": "Gaz qozonlarini himoya qilish tizimi bir qator qurilmalarni o'z ichiga oladi. Kengaytirish tanki suvning ortiqcha hajmini o'zlashtiradi. Agar uning idishi ortiqcha to'ldirilgan bo'lsa, xavfsizlik valfi ishlaydi va suv kanalizatsiyaga tushadi. Bosim normal holatga qaytsa, vana yana yopiladi. Agar bu ikki element asosiy dizaynga kiritilmagan bo'lsa, bu zamonaviy modellarda deyarli hech qachon bo'lmasa, u holda ular isitish tizimiga alohida qurilgan. Gaz ta'minoti ionlash yonishini nazorat qilish moslamasi tomonidan tekshiriladi. Agar olov o'chsa, u darhol yonish kamerasiga gaz etkazib berishni to'xtatadi. Xavfsizlik asboblari tortishni boshqarish sensorini o'z ichiga oladi. Agar gaz yoki elektr ta'minoti to'xtatilsa yoki sovutish suvi hajmi kamaysa, qozonni o'chiradigan tizimlar taqdim etiladi.",
+    "question4": "Uyda ikkita hammom va oshxonada lavabo bor, isitish va issiq suv uchun qanday uskunani tanlashim kerak?",
+    "text4": "Ikki pallali qozon issiq suv ta'minoti bilan bardosh bera olmaydi. Agar sezilarli darajada suv iste'moli kutilsa, isitish uchun bitta devirli qozon va maishiy issiq suv uchun bilvosita isitish qozonini sotib olish yaxshiroqdir. Qozondan quvur o'tadi, u orqali issiq suv qozon batareyasiga kiradi. Undan issiqlik almashinuvi tufayli tankdagi suv isitiladi. Sizning holatlaringizda tavsiya etilgan qozon hajmi 200 litrni tashkil qiladi. Uskunalar qimmat. Shu bilan bir qatorda, siz gazli oqimli suv isitgichini o'rnatish haqida o'ylashingiz mumkin. Ushbu yechimning afzalligi shundaki, yozda isitish kerak bo'lmaganda, qozon ishlamaydi, bu uning resursini oshiradi.",
+    "question5": "Yonish turiga e'tibor berishim kerakmi?",
+    "text5": "Gazli qozonlarda burnerni ikki usulda yoqish mumkin. Piezoelektrik yonish tugmani bosish orqali qo'lda amalga oshiriladi. Shu bilan birga, uchqun sakrab chiqadi va yonish tayoqchasi yonadi. U doimo yonib turadi, hatto qozon isitilmasa ham, gaz hali ham iste'mol qilinadi. Agar avtomatik xavfsizlik tizimi ishga tushirilsa, masalan, quvvat o'chirilganda, to'xtatilgan qozonni ishga tushirish uchun siz yana tugmani bosishingiz kerak bo'ladi. Agar egasi uyda bo'lmasa, u kelgunga qadar isitish o'chiriladi. Elektr yonishli qozonlarda bunday kamchiliklar yo'q. Ularda uchuvchi chiroq yo'q va avtomatik ravishda yoqiladi.",
+    "question6": "Kvartirada baca bor, qaysi gazli qozonni tanlashim kerak?",
+    "text6": "Bacali uylarda ochiq yonish kamerasi bo'lgan gazli qozonlarni o'rnatish mumkin. Yonish mahsulotlari tabiiy qoralama ta'sirida chiqariladi. Ko'pgina xaridorlar eski gazli suv isitgichi o'rniga ikki pallali qozon o'rnatadilar. Ushbu yechimning afzalligi - uskunaning arzonligi va uni o'rnatish. Kamchilik shundaki, havo xonadan olinadi, u yonish jarayonini saqlab qolish uchun sarflanadi. Shuning uchun ularni qozonxonalarga o'rnatish tavsiya etiladi, bu erda oshxonaga qaraganda doimiy shamollatishni tashkil qilish osonroq. Yaqinda, hatto baca bo'lsa ham, yopiq yonish kamerasiga ega gazli qozonxonalar asosan kvartirani isitish uchun ishlatiladi. Ular xavfsizroq hisoblanadi, chunki ular ko'chadan havo oladi."
+  },
+  "contact": {
+    "title": "Biz bilan bog'laning",
+    "bold1": "Manzil:",
+    "text1": "Toshkent shahar, Yakkasaroy tumani, Choshtepa ko'chasi",
+    "bold2": "Telefon raqam:",
+    "text2": "+998(33) 634-99-99",
+    "bold3": "E-mail",
+    "text3": "abrayev@gmail.com",
+    "bold4": "Ish vaqti / Ish tartibi",
+    "text4": "Har kuni 08:00 dan 22:00 gacha"
+  },
+  "fixed": {
+    "phone": "Telefon raqam"
+  }
+}

@@ -3,16 +3,35 @@ import Location from "../components/home/Location";
 import Testimonial from "../components/home/Testimonial";
 import group from "../assets/group.jpg";
 import problem from "../assets/problem.avif";
+import { useTranslation } from "react-i18next";
+import { useEffect } from "react";
+import { Helmet } from "react-helmet";
 const Home = () => {
+  const { t, i18n } = useTranslation();
+
+  useEffect(() => {
+    i18n.changeLanguage(localStorage.getItem("lang") || "uzb");
+  }, [i18n]);
   return (
     <>
+      <Helmet>
+        <title>Катёл ремонт</title>
+        <meta
+          name="description"
+          content="Katyol va gaz qozonlari uchun professional ta'mirlash xizmati: katyol remont, katyol usta, gaz qozonlarini ta'mirlash, xizmat ko'rsatish markazi. Ustalarimiz katyolingizni tez va sifatli ta'mirlaydi. Газовые котлы: ремонт и обслуживание в вашем регионе."
+        />
+        <meta
+          name="keywords"
+          content="katyol remont, катёл ремонт, кател ремонт, remont katyol, ремонт катёл, ремонт кател, katyol usta, katyol ustasi, катёл уста, кател устаси, мастер котлов, кател мастер, сервис сентер катёл, service centre gas boiler, fix gas boiler, master gas boiler, katyol, катёл, кател"
+        />
+      </Helmet>
       <main>
         <HeroCarousel />
         <section className="pt-20 bg-gray-300">
           <div className="container mx-auto px-4">
             <div className="text-center max-w-xl mx-auto">
               <h1 className="text-3xl sm:text-5xl font-bold sm:mb-5 mb-3 text-gray-600">
-                Bizning sizga taklif qiladigan xizmatlarimiz
+                {t("services.title")}
               </h1>
               <div className="text-center mb-4 sm:mb-10">
                 <span className="inline-block w-1 h-1 rounded-full bg-red-500 ml-1"></span>
@@ -30,11 +49,10 @@ const Home = () => {
                       <i className="fa-regular fa-clock text-2xl"></i>
                     </div>
                     <h6 className="text-xl font-semibold">
-                      Biz 24/7 ishlaymiz
+                      {t("services.title1")}
                     </h6>
                     <p className="mt-2 mb-4 text-gray-600">
-                      Bizning xizmat ko'rsatish markazimiz sizning
-                      qo'ng'iroqlaringizni kechayu kunduz qabul qilishga tayyor.
+                      {t("services.text1")}
                     </p>
                   </div>
                 </div>
@@ -46,10 +64,11 @@ const Home = () => {
                     <div className="text-white p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-4 shadow-lg rounded-full bg-blue-400">
                       <i className="fa-solid fa-list-check text-2xl"></i>
                     </div>
-                    <h6 className="text-xl font-semibold">Diagnostika</h6>
+                    <h6 className="text-xl font-semibold">
+                      {t("services.title2")}
+                    </h6>
                     <p className="mt-2 mb-4 text-gray-600">
-                      Mutaxassislar qozonning noto'g'ri ishlashining manbasini
-                      tezda aniqlaydilar
+                      {t("services.text2")}
                     </p>
                   </div>
                 </div>
@@ -61,9 +80,11 @@ const Home = () => {
                     <div className="text-white p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-4 shadow-lg rounded-full bg-green-400">
                       <i className="fa-solid fa-screwdriver-wrench text-2xl"></i>
                     </div>
-                    <h6 className="text-xl font-semibold">Ta'mirlash</h6>
+                    <h6 className="text-xl font-semibold">
+                      {t("services.title3")}
+                    </h6>
                     <p className="mt-2 mb-4 text-gray-600">
-                      Mijozlar uchun arzon narxda mukammal ta'mirlash xizmati
+                      {t("services.text3")}
                     </p>
                   </div>
                 </div>
@@ -76,18 +97,13 @@ const Home = () => {
                   <i className="fas fa-user-friends text-xl"></i>
                 </div>
                 <h3 className="text-3xl mb-2 font-semibold leading-normal">
-                  Bizning kompaniyamiz bozorda 12 yildan ortiq vaqtdan beri
-                  mavjud
+                  {t("services.title4")}
                 </h3>
                 <p className="text-lg font-light leading-relaxed mt-4 mb-4 text-gray-700">
-                  Avvalo, sanoatda ko'p yillar davomida to'plangan tajriba va
-                  bilimimiz bizni bozorda boshqalardan ajratib turadi.
+                  {t("services.text41")}
                 </p>
                 <p className="text-lg font-light leading-relaxed mt-0 mb-4 text-gray-700">
-                  Bizning xodimlarimiz eng yuqori darajadagi haqiqiy
-                  professionallar, ularning har biri o'z sohasining mutaxassisi.
-                  Mutaxassislarimiz innovatsion yechimlarni yaratishga qodir
-                  ekanliklari va doimo takomillashayotganidan faxrlanamiz.
+                  {t("services.text42")}
                 </p>
               </div>
 
@@ -96,7 +112,6 @@ const Home = () => {
                   <img
                     alt="..."
                     src={group}
-                    // https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1051&q=80
                     className="w-full align-middle rounded-t-lg"
                   />
                   <blockquote className="relative p-8 mb-4">
@@ -116,12 +131,10 @@ const Home = () => {
                       ></polygon>
                     </svg>
                     <h4 className="text-xl font-bold text-white">
-                      Bizning maqsad
+                      {t("services.title5")}
                     </h4>
                     <p className="text-md font-light mt-2 text-white">
-                      Bizning kompaniyamiz doimo mijozlarimizning ehtiyojlari va
-                      umidlariga e'tibor qaratadi. Bizning muvaffaqiyatimiz
-                      ularning qoniqishiga bog'liqligini aniq tushunamiz.
+                      {t("services.text5")}
                     </p>
                   </blockquote>
                 </div>
@@ -166,10 +179,10 @@ const Home = () => {
                     <i className="fa-solid fa-circle-exclamation text-xl"></i>
                   </div>
                   <h3 className="text-3xl font-semibold">
-                    Qozonxonalar bilan bog'liq eng keng tarqalgan xatolar
+                    {t("errors.title")}
                   </h3>
                   <p className="mt-4 text-lg leading-relaxed text-gray-600">
-                    Biz quyidagi keng tarqalgan xatolarni muammosiz tuzatamiz
+                    {t("errors.subtitle")}
                   </p>
                   <ul className="list-none mt-6">
                     <li className="py-2">
@@ -178,9 +191,7 @@ const Home = () => {
                           <i className="fa-solid fa-triangle-exclamation text-base"></i>
                         </div>
                         <div>
-                          <h4 className="text-gray-600">
-                            sovutish suvi bosimining yetarli emasligi
-                          </h4>
+                          <h4 className="text-gray-600">{t("errors.text1")}</h4>
                         </div>
                       </div>
                     </li>
@@ -190,9 +201,7 @@ const Home = () => {
                           <i className="fa-solid fa-triangle-exclamation text-base"></i>
                         </div>
                         <div>
-                          <h4 className="text-gray-600">
-                          ateşleme bilan bog'liq muammolar
-                          </h4>
+                          <h4 className="text-gray-600">{t("errors.text2")}</h4>
                         </div>
                       </div>
                     </li>
@@ -202,7 +211,7 @@ const Home = () => {
                           <i className="fa-solid fa-triangle-exclamation text-base"></i>
                         </div>
                         <div>
-                          <h4 className="text-gray-600">isitish harorati sensori shikastlanishi</h4>
+                          <h4 className="text-gray-600">{t("errors.text3")}</h4>
                         </div>
                       </div>
                     </li>
@@ -404,10 +413,10 @@ const Home = () => {
             <div className="flex flex-wrap text-center justify-center">
               <div className="w-full lg:w-8/12 px-4">
                 <h2 className="text-4xl font-semibold text-white uppercase">
-                Biz sizga quyidagilarni taklif qilamiz!
+                  {t("form.title")}
                 </h2>
                 <p className="text-lg leading-relaxed mt-4 mb-4 text-gray-500">
-                Biz yuqori sifatli mahsulot va xizmatlarni taqdim etamiz, mijozlar so'rovlariga tez va moslashuvchan javob beramiz va individual yondashuvni ta'minlaymiz. Eng so'nggi tendentsiyalar va o'zgarishlardan xabardor bo'lish uchun biz doimo bozorni o'rganamiz va tahlil qilamiz.
+                  {t("form.subtitle")}
                 </p>
               </div>
             </div>
@@ -417,11 +426,9 @@ const Home = () => {
                   <i className="fa-solid fa-sack-dollar text-xl"></i>
                 </div>
                 <h6 className="text-xl mt-4 font-semibold text-white">
-                Qulay narx
+                  {t("form.bold1")}
                 </h6>
-                <p className="mt-2 mb-4 text-gray-500">
-                Narxlarni biznikidan pastroq topdingizmi? Biz uskunani raqobatchimizdan 10% arzonroq ta'mirlaymiz.
-                </p>
+                <p className="mt-2 mb-4 text-gray-500">{t("form.text1")}</p>
               </div>
               <div className="w-full lg:w-4/12 px-4 text-center">
                 <div className="text-gray-900 p-3 w-12 h-12 shadow-lg rounded-full bg-white inline-flex items-center justify-center">
@@ -429,22 +436,18 @@ const Home = () => {
                   <i className="fa-solid fa-shield text-xl"></i>
                 </div>
                 <h5 className="text-xl mt-4 font-semibold text-white">
-                Professionalizm
+                  {t("form.bold2")}
                 </h5>
-                <p className="mt-2 mb-4 text-gray-500">
-                Bizning jamoamiz 11 yildan ortiq tajribaga ega hunarmandlardan iborat.
-                </p>
+                <p className="mt-2 mb-4 text-gray-500">{t("form.text2")}</p>
               </div>
               <div className="w-full lg:w-4/12 px-4 text-center">
                 <div className="text-gray-900 p-3 w-12 h-12 shadow-lg rounded-full bg-white inline-flex items-center justify-center">
                   <i className="fa-solid fa-star text-xl"></i>
                 </div>
                 <h5 className="text-xl mt-4 font-semibold text-white">
-                Sifatni tekshirish
+                  {t("form.bold3")}
                 </h5>
-                <p className="mt-2 mb-4 text-gray-500">
-                Biz ish va o'rnatilgan ehtiyot qismlar uchun 6 oy kafolat beramiz.
-                </p>
+                <p className="mt-2 mb-4 text-gray-500">{t("form.text3")}</p>
               </div>
             </div>
           </div>
@@ -456,22 +459,22 @@ const Home = () => {
                 <div className="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-gray-300">
                   <div className="flex-auto p-5 lg:p-10">
                     <h4 className="text-2xl font-semibold">
-                      Biz bilan bog'lanishni istaysizmi?
+                      {t("form.ftitle")}
                     </h4>
                     <p className="leading-relaxed mt-1 mb-4 text-gray-600">
-                      Bu formani to'ldiring va 24 soat ichida sizga jabob beriladi.
+                      {t("form.fsubtitle")}
                     </p>
                     <div className="relative w-full mb-3 mt-8">
                       <label
                         className="block uppercase text-gray-700 text-xs font-bold mb-2"
                         htmlFor="full-name"
                       >
-                        Ism-familiya
+                        {t("form.label1")}
                       </label>
                       <input
                         type="text"
                         className="border-0 px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full"
-                        placeholder="Sohibjon Abdialimov"
+                        placeholder={t("form.pl1")}
                         style={{ transition: "all .15s ease" }}
                       />
                     </div>
@@ -481,12 +484,12 @@ const Home = () => {
                         className="block uppercase text-gray-700 text-xs font-bold mb-2"
                         htmlFor="email"
                       >
-                        Email yoki telefon raqam
+                        {t("form.label2")}
                       </label>
                       <input
                         type="email"
                         className="border-0 px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full"
-                        placeholder="Email yoki tel raqam"
+                        placeholder={t("form.pl2")}
                         style={{ transition: "all .15s ease" }}
                       />
                     </div>
@@ -496,13 +499,13 @@ const Home = () => {
                         className="block uppercase text-gray-700 text-xs font-bold mb-2"
                         htmlFor="message"
                       >
-                        Xabar
+                        {t("form.label3")}
                       </label>
                       <textarea
                         rows="4"
                         cols="80"
                         className="border-0 px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full"
-                        placeholder="Xabar yozing ..."
+                        placeholder={t("form.pl3")}
                       />
                     </div>
                     <div className="text-center mt-6">
@@ -511,7 +514,7 @@ const Home = () => {
                         type="button"
                         style={{ transition: "all .15s ease" }}
                       >
-                        Xabar jo'natish
+                        {t("form.btn")}
                       </button>
                     </div>
                   </div>

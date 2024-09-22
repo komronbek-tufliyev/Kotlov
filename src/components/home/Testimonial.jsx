@@ -1,98 +1,20 @@
+import { useTranslation } from "react-i18next";
 import avatar from "../../assets/avatar.jpg";
+import { useEffect } from "react";
 const Testimonial = () => {
+  const { t, i18n } = useTranslation();
+
+  useEffect(() => {
+    i18n.changeLanguage(localStorage.getItem("lang") || "uzb");
+  }, [i18n]);
   return (
-    // <div className="container mt-5 mb-5">
-    //   <div className="grid grid-cols-1 gap-5 sm:grid-cols-3">
-    //       <div className="card p-3 text-center px-4">
-    //         <div className="user-image flex justify-center items-center mb-3">
-    //           <img
-    //             src={avatar}
-    //             className="rounded-circle"
-    //             width="80"
-    //           />
-    //         </div>
-
-    //         <div className="user-content">
-    //           <h5 className="mb-0">Bruce Hardy</h5>
-    //           <p>
-    //             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-    //             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-    //             enim ad minim veniam, quis nostrud exercitation ullamco laboris
-    //             nisi ut aliquip ex ea commodo consequat.
-    //           </p>
-    //         </div>
-
-    //         <div className="ratings">
-    //           <i className="fa fa-star"></i>
-    //           <i className="fa fa-star"></i>
-    //           <i className="fa fa-star"></i>
-    //           <i className="fa fa-star"></i>
-    //         </div>
-    //       </div>
-
-    //       <div className="card p-3 text-center px-4">
-    //         <div className="user-image flex justify-center items-center mb-3">
-    //           <img
-    //             src="https://i.imgur.com/w2CKRB9.jpg"
-    //             className="rounded-circle"
-    //             width="80"
-    //           />
-    //         </div>
-
-    //         <div className="user-content">
-    //           <h5 className="mb-0">Mark Smith</h5>
-    //           <p>
-    //             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-    //             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-    //             enim ad minim veniam, quis nostrud exercitation ullamco laboris
-    //             nisi ut aliquip ex ea commodo consequat.
-    //           </p>
-    //         </div>
-
-    //         <div className="ratings">
-    //           <i className="fa fa-star"></i>
-    //           <i className="fa fa-star"></i>
-    //           <i className="fa fa-star"></i>
-    //           <i className="fa fa-star"></i>
-    //           <i className="fa fa-star"></i>
-    //         </div>
-    //       </div>
-
-    //       <div className="card p-3 text-center px-4">
-    //         <div className="user-image flex justify-center items-center mb-3">
-    //           <img
-    //             src="https://i.imgur.com/ACeArwY.jpg"
-    //             className="rounded-circle"
-    //             width="80"
-    //           />
-    //         </div>
-
-    //         <div className="user-content">
-    //           <h5 className="mb-0">Veera Duncan</h5>
-    //           <p>
-    //             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-    //             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-    //             enim ad minim veniam, quis nostrud exercitation ullamco laboris
-    //             nisi ut aliquip ex ea commodo consequat.
-    //           </p>
-    //         </div>
-
-    //         <div className="ratings">
-    //           <i className="fa fa-star"></i>
-    //           <i className="fa fa-star"></i>
-    //           <i className="fa fa-star"></i>
-    //           <i className="fa fa-star"></i>
-    //         </div>
-    //       </div>
-    //   </div>
-    // </div>
     <>
       <div className="min-w-screen min-h-screen bg-gray-50 flex items-center justify-center py-5">
         <div className="w-full bg-white border-t border-b border-gray-200 px-5 py-16 md:py-24 text-gray-800">
           <div className="w-full max-w-6xl mx-auto">
             <div className="text-center max-w-xl mx-auto">
               <h1 className="text-3xl sm:text-5xl font-bold sm:mb-5 mb-3 text-gray-600">
-                Biz haqimizda mijozlarimizning fikri
+              {t("clients.title")}
               </h1>
               <div className="text-center mb-10">
                 <span className="inline-block w-1 h-1 rounded-full bg-indigo-500 ml-1"></span>
@@ -111,7 +33,7 @@ const Testimonial = () => {
                     </div>
                     <div className="flex-grow pl-3">
                       <h6 className="font-bold text-base uppercase text-gray-600">
-                        Kenzie Edgar.
+                      {t("clients.client1")}
                       </h6>
                     </div>
                   </div>
@@ -120,10 +42,7 @@ const Testimonial = () => {
                       <span className="text-xl leading-none italic font-bold text-gray-400 mr-1">
                         "
                       </span>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Quos sunt ratione dolor exercitationem minima quas itaque
-                      saepe quasi architecto vel! Accusantium, vero sint
-                      recusandae cum tempora nemo commodi soluta deleniti.
+                      {t("clients.text1")}
                       <span className="text-xl leading-none italic font-bold text-gray-400 ml-1">
                         "
                       </span>
@@ -133,11 +52,12 @@ const Testimonial = () => {
                 <div className="testimonial w-full mx-auto rounded-lg bg-white border border-gray-200 text-gray-800 font-light mb-6">
                   <div className="w-full flex mb-4 items-center">
                     <div className="overflow-hidden rounded-full w-10 h-10 bg-gray-50 border border-gray-200">
-                      <img src="https://i.pravatar.cc/100?img=2" alt="" />
+                      <img src={avatar} alt="" /> 
+                      {/* https://i.pravatar.cc/100?img=2 */}
                     </div>
                     <div className="flex-grow pl-3">
                       <h6 className="font-bold text-base uppercase text-gray-600">
-                        Stevie Tifft.
+                      {t("clients.client2")}
                       </h6>
                     </div>
                   </div>
@@ -146,63 +66,7 @@ const Testimonial = () => {
                       <span className="text-xl leading-none italic font-bold text-gray-400 mr-1">
                         "
                       </span>
-                      Lorem ipsum, dolor sit amet, consectetur adipisicing elit.
-                      Dolore quod necessitatibus, labore sapiente, est,
-                      dignissimos ullam error ipsam sint quam tempora vel.
-                      <span className="text-xl leading-none italic font-bold text-gray-400 ml-1">
-                        "
-                      </span>
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div className="px-3 md:w-1/3">
-                <div className="testimonial w-full mx-auto rounded-lg bg-white border border-gray-200 text-gray-800 font-light mb-6">
-                  <div className="w-full flex mb-4 items-center">
-                    <div className="overflow-hidden rounded-full w-10 h-10 bg-gray-50 border border-gray-200">
-                      <img src="https://i.pravatar.cc/100?img=3" alt="" />
-                    </div>
-                    <div className="flex-grow pl-3">
-                      <h6 className="font-bold text-base uppercase text-gray-600">
-                        Tommie Ewart.
-                      </h6>
-                    </div>
-                  </div>
-                  <div className="w-full">
-                    <p className="text-base leading-tight">
-                      <span className="text-xl leading-none italic font-bold text-gray-400 mr-1">
-                        "
-                      </span>
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                      Vitae, obcaecati ullam excepturi dicta error deleniti
-                      sequi.
-                      <span className="text-xl leading-none italic font-bold text-gray-400 ml-1">
-                        "
-                      </span>
-                    </p>
-                  </div>
-                </div>
-                <div className="testimonial w-full mx-auto rounded-lg bg-white border border-gray-200 text-gray-800 font-light mb-6">
-                  <div className="w-full flex mb-4 items-center">
-                    <div className="overflow-hidden rounded-full w-10 h-10 bg-gray-50 border border-gray-200">
-                      <img src="https://i.pravatar.cc/100?img=4" alt="" />
-                    </div>
-                    <div className="flex-grow pl-3">
-                      <h6 className="font-bold text-base uppercase text-gray-600">
-                        Charlie Howse.
-                      </h6>
-                    </div>
-                  </div>
-                  <div className="w-full">
-                    <p className="text-base leading-tight">
-                      <span className="text-xl leading-none italic font-bold text-gray-400 mr-1">
-                        "
-                      </span>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Architecto inventore voluptatum nostrum atque, corrupti,
-                      vitae esse id accusamus dignissimos neque reprehenderit
-                      natus, hic sequi itaque dicta nisi voluptatem! Culpa,
-                      iusto.
+                      {t("clients.text2")}
                       <span className="text-xl leading-none italic font-bold text-gray-400 ml-1">
                         "
                       </span>
@@ -214,11 +78,12 @@ const Testimonial = () => {
                 <div className="testimonial w-full mx-auto rounded-lg bg-white border border-gray-200 text-gray-800 font-light mb-6">
                   <div className="w-full flex mb-4 items-center">
                     <div className="overflow-hidden rounded-full w-10 h-10 bg-gray-50 border border-gray-200">
-                      <img src="https://i.pravatar.cc/100?img=5" alt="" />
+                      <img src={avatar} alt="" />
+                      {/* "https://i.pravatar.cc/100?img=3" */}
                     </div>
                     <div className="flex-grow pl-3">
                       <h6 className="font-bold text-base uppercase text-gray-600">
-                        Nevada Herbertson.
+                      {t("clients.client3")}
                       </h6>
                     </div>
                   </div>
@@ -227,11 +92,7 @@ const Testimonial = () => {
                       <span className="text-xl leading-none italic font-bold text-gray-400 mr-1">
                         "
                       </span>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Nobis, voluptatem porro obcaecati dicta, quibusdam sunt
-                      ipsum, laboriosam nostrum facere exercitationem pariatur
-                      deserunt tempora molestiae assumenda nesciunt alias eius?
-                      Illo, autem!
+                      {t("clients.text3")}
                       <span className="text-xl leading-none italic font-bold text-gray-400 ml-1">
                         "
                       </span>
@@ -241,11 +102,12 @@ const Testimonial = () => {
                 <div className="testimonial w-full mx-auto rounded-lg bg-white border border-gray-200 text-gray-800 font-light mb-6">
                   <div className="w-full flex mb-4 items-center">
                     <div className="overflow-hidden rounded-full w-10 h-10 bg-gray-50 border border-gray-200">
-                      <img src="https://i.pravatar.cc/100?img=6" alt="" />
+                      <img src={avatar} alt="" />
+                      {/* https://i.pravatar.cc/100?img=4 */}
                     </div>
                     <div className="flex-grow pl-3">
                       <h6 className="font-bold text-base uppercase text-gray-600">
-                        Kris Stanton.
+                      {t("clients.client4")}
                       </h6>
                     </div>
                   </div>
@@ -254,8 +116,57 @@ const Testimonial = () => {
                       <span className="text-xl leading-none italic font-bold text-gray-400 mr-1">
                         "
                       </span>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Voluptatem iusto, explicabo, cupiditate quas totam!
+                      {t("clients.text4")}
+                      <span className="text-xl leading-none italic font-bold text-gray-400 ml-1">
+                        "
+                      </span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="px-3 md:w-1/3">
+                <div className="testimonial w-full mx-auto rounded-lg bg-white border border-gray-200 text-gray-800 font-light mb-6">
+                  <div className="w-full flex mb-4 items-center">
+                    <div className="overflow-hidden rounded-full w-10 h-10 bg-gray-50 border border-gray-200">
+                      <img src={avatar} alt="" />
+                      {/* https://i.pravatar.cc/100?img=5 */}
+                    </div>
+                    <div className="flex-grow pl-3">
+                      <h6 className="font-bold text-base uppercase text-gray-600">
+                      {t("clients.client5")}
+                      </h6>
+                    </div>
+                  </div>
+                  <div className="w-full">
+                    <p className="text-base leading-tight">
+                      <span className="text-xl leading-none italic font-bold text-gray-400 mr-1">
+                        "
+                      </span>
+                      {t("clients.text5")}
+                      <span className="text-xl leading-none italic font-bold text-gray-400 ml-1">
+                        "
+                      </span>
+                    </p>
+                  </div>
+                </div>
+                <div className="testimonial w-full mx-auto rounded-lg bg-white border border-gray-200 text-gray-800 font-light mb-6">
+                  <div className="w-full flex mb-4 items-center">
+                    <div className="overflow-hidden rounded-full w-10 h-10 bg-gray-50 border border-gray-200">
+                      <img src={avatar} alt="" />
+                      {/* https://i.pravatar.cc/100?img=6 */}
+                    </div>
+                    <div className="flex-grow pl-3">
+                      <h6 className="font-bold text-base uppercase text-gray-600">
+                      {t("clients.client6")}
+                      </h6>
+                    </div>
+                  </div>
+                  <div className="w-full">
+                    <p className="text-base leading-tight">
+                      <span className="text-xl leading-none italic font-bold text-gray-400 mr-1">
+                        "
+                      </span>
+                      {t("clients.text6")}
                       <span className="text-xl leading-none italic font-bold text-gray-400 ml-1">
                         "
                       </span>

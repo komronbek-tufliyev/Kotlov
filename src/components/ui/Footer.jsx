@@ -1,6 +1,14 @@
+import { useEffect } from "react";
+import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 
 export default function Footer() {
+  const { t, i18n } = useTranslation();
+
+  useEffect(() => {
+    i18n.changeLanguage(localStorage.getItem("lang") || "uzb");
+  }, [i18n]);
+
   return (
     <footer className="relative bg-gray-300 pt-14 pb-6">
       {/* <div
@@ -25,10 +33,9 @@ export default function Footer() {
       <div className="container mx-auto px-4">
         <div className="flex flex-wrap">
           <div className="w-full lg:w-5/12 px-4">
-            <h4 className="text-3xl font-semibold">Bizga murojaat qiling</h4>
+            <h4 className="text-3xl font-semibold"> {t("footer.title")}</h4>
             <h5 className="text-base mt-0 mb-2 text-gray-700">
-              Toshkent shahar va Toshkent viloyatida isitish tizimini ta'mirlash
-              xizmati va texnik xizmat ko'rsatish
+              {t("footer.subtitle")}
             </h5>
             {/* <div className="my-9 flex gap-3">
               <button
@@ -61,23 +68,23 @@ export default function Footer() {
             <div className="flex flex-wrap items-top mb-6">
               <div className="w-full lg:w-4/12 px-4 ml-auto">
                 <span className="block uppercase text-gray-600 text-sm font-semibold mb-2">
-                 Pastki havolalar
+                  {t("footer.links")}
                 </span>
                 <ul className="list-unstyled">
                   <li>
-                  <li>
-                    <Link
-                      className="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
-                      to="/more"
-                    >
-                      Ishlarimizdan namunalar
-                    </Link>
-                  </li>
+                    <li>
+                      <Link
+                        className="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
+                        to="/more"
+                      >
+                        {t("footer.link1")}
+                      </Link>
+                    </li>
                     <Link
                       className="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
                       to={"/question"}
                     >
-                      Savollarga javoblar
+                      {t("footer.link2")}
                     </Link>
                   </li>
                   <li>
@@ -85,14 +92,14 @@ export default function Footer() {
                       className="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
                       to="/contact"
                     >
-                      Aloqa
+                      {t("footer.link3")}
                     </Link>
                   </li>
                 </ul>
               </div>
               <div className="w-full lg:w-5/12 px-4">
                 <span className="block uppercase text-gray-600 text-sm font-semibold mb-2">
-                  Bizning kontaktlarimiz
+                  {t("footer.contacts")}
                 </span>
                 <ul className="list-unstyled">
                   <li>
@@ -110,7 +117,7 @@ export default function Footer() {
                   <li>
                     <div className="text-gray-700 hover:text-gray-900 font-semibold pb-2 text-sm flex items-center gap-1">
                       <i className="fa-solid fa-location-dot"></i>
-                      Toshkent shahar, Yakkasaroy tumani, Choshtepa ko'chasi
+                      {t("footer.location")}
                     </div>
                   </li>
                 </ul>
@@ -122,13 +129,11 @@ export default function Footer() {
         <div className="flex flex-wrap items-center md:justify-between justify-center">
           <div className="w-full md:w-4/12 px-4 mx-auto text-center">
             <div className="text-sm text-gray-600 font-semibold py-1">
-              {new Date().getFullYear()}-yil.{" "}
-              <a
-                href="https://www.creative-tim.com"
+              <p
                 className="text-gray-600 hover:text-gray-900"
               >
-                Barcha huquqlar himoyalangan.
-              </a>
+                {t("footer.reserved")}
+              </p>
             </div>
           </div>
         </div>

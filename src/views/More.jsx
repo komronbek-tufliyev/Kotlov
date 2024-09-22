@@ -12,12 +12,15 @@ import i11 from "../assets/q11.jpg";
 import i12 from "../assets/q12.jpg";
 import i13 from "../assets/q13.jpg";
 import i14 from "../assets/q14.jpg";
-import { useRef } from "react";
+import { useEffect, useRef } from "react";
+import { useTranslation } from "react-i18next";
+import { Helmet } from "react-helmet";
 
 const More = () => {
   const modal = useRef(null);
   const modalImg = useRef(null);
   const captionText = useRef(null);
+  const { t, i18n } = useTranslation();
   function onOpen(e) {
     modal.current.style.display = "flex";
     modalImg.current.src = e.target.src;
@@ -26,12 +29,27 @@ const More = () => {
   function closeFunc() {
     modal.current.style.display = "none";
   }
+
+  useEffect(() => {
+    i18n.changeLanguage(localStorage.getItem("lang") || "uzb");
+  }, [i18n]);
   return (
     <div className="container">
-      <div className="min-h-[90dvh] px-6 lg:px-24">
+       <Helmet>
+        <title>Катёл бўйича намуналар</title>
+        <meta
+          name="description"
+          content="Katyol va gaz qozonlari uchun professional ta'mirlash xizmati: katyol remont, katyol usta, gaz qozonlarini ta'mirlash, xizmat ko'rsatish markazi. Ustalarimiz katyolingizni tez va sifatli ta'mirlaydi. Газовые котлы: ремонт и обслуживание в вашем регионе. Katyol bo'yicha savollarga javoblar"
+        />
+        <meta
+          name="keywords"
+          content="katyol remont, катёл ремонт, кател ремонт, remont katyol, ремонт катёл, ремонт кател, katyol usta, katyol ustasi, катёл уста, кател устаси, мастер котлов, кател мастер, сервис сентер катёл, service centre gas boiler, fix gas boiler, master gas boiler, katyol, катёл, кател"
+        />
+      </Helmet>
+      <div className="min-h-[90dvh]">
         <div className="text-center max-w-xl mx-auto">
           <h1 className="text-3xl sm:text-5xl font-bold mt-12 sm:mb-5 mb-3 text-gray-600">
-            Ishlarimizdan namunalar
+          {t("examples.title")}
           </h1>
           <div className="text-center mb-6 sm:mb-12">
             <span className="inline-block w-1 h-1 rounded-full bg-green-500 ml-1"></span>
@@ -49,7 +67,7 @@ const More = () => {
               className="w-[200px] h-[200px] myImg"
               src={i1}
               id="myImg"
-              alt="Ishlarimizdan namunalar"
+              alt={t("examples.text")}
             />
             <div ref={modal} id="myModal" className="modal">
               <span onClick={() => closeFunc()} className="close">
@@ -65,7 +83,7 @@ const More = () => {
               className="w-[200px] h-[200px] myImg"
               src={i2}
               id="myImg"
-              alt="Ishlarimizdan namunalar"
+              alt={t("examples.text")}
             />
             <div ref={modal} id="myModal" className="modal">
               <span onClick={() => closeFunc()} className="close">
@@ -81,7 +99,7 @@ const More = () => {
               className="w-[200px] h-[200px] myImg"
               src={i3}
               id="myImg"
-              alt="Ishlarimizdan namunalar"
+              alt={t("examples.text")}
             />
             <div ref={modal} id="myModal" className="modal">
               <span onClick={() => closeFunc()} className="close">
@@ -97,7 +115,7 @@ const More = () => {
               className="w-[200px] h-[200px] myImg"
               src={i4}
               id="myImg"
-              alt="Ishlarimizdan namunalar"
+              alt={t("examples.text")}
             />
             <div ref={modal} id="myModal" className="modal">
               <span onClick={() => closeFunc()} className="close">
@@ -113,7 +131,7 @@ const More = () => {
               className="w-[200px] h-[200px] myImg"
               src={i5}
               id="myImg"
-              alt="Ishlarimizdan namunalar"
+              alt={t("examples.text")}
             />
             <div ref={modal} id="myModal" className="modal">
               <span onClick={() => closeFunc()} className="close">
@@ -129,7 +147,7 @@ const More = () => {
               className="w-[200px] h-[200px] myImg"
               src={i6}
               id="myImg"
-              alt="Ishlarimizdan namunalar"
+              alt={t("examples.text")}
             />
             <div ref={modal} id="myModal" className="modal">
               <span onClick={() => closeFunc()} className="close">
@@ -145,7 +163,7 @@ const More = () => {
               className="w-[200px] h-[200px] myImg"
               src={i7}
               id="myImg"
-              alt="Ishlarimizdan namunalar"
+              alt={t("examples.text")}
             />
             <div ref={modal} id="myModal" className="modal">
               <span onClick={() => closeFunc()} className="close">
@@ -161,7 +179,7 @@ const More = () => {
               className="w-[200px] h-[200px] myImg"
               src={i14}
               id="myImg"
-              alt="Ishlarimizdan namunalar"
+              alt={t("examples.text")}
             />
             <div ref={modal} id="myModal" className="modal">
               <span onClick={() => closeFunc()} className="close">
@@ -177,7 +195,7 @@ const More = () => {
               className="w-[200px] h-[200px] myImg"
               src={i9}
               id="myImg"
-              alt="Ishlarimizdan namunalar"
+              alt={t("examples.text")}
             />
             <div ref={modal} id="myModal" className="modal">
               <span onClick={() => closeFunc()} className="close">
@@ -193,7 +211,7 @@ const More = () => {
               className="w-[200px] h-[200px] myImg"
               src={i10}
               id="myImg"
-              alt="Ishlarimizdan namunalar"
+              alt={t("examples.text")}
             />
             <div ref={modal} id="myModal" className="modal">
               <span onClick={() => closeFunc()} className="close">
@@ -209,7 +227,7 @@ const More = () => {
               className="w-[200px] h-[200px] myImg"
               src={i11}
               id="myImg"
-              alt="Ishlarimizdan namunalar"
+              alt={t("examples.text")}
             />
             <div ref={modal} id="myModal" className="modal">
               <span onClick={() => closeFunc()} className="close">
@@ -225,7 +243,7 @@ const More = () => {
               className="w-[200px] h-[200px] myImg"
               src={i12}
               id="myImg"
-              alt="Ishlarimizdan namunalar"
+              alt={t("examples.text")}
             />
             <div ref={modal} id="myModal" className="modal">
               <span onClick={() => closeFunc()} className="close">
@@ -241,7 +259,7 @@ const More = () => {
               className="w-[200px] h-[200px] myImg"
               src={i13}
               id="myImg"
-              alt="Ishlarimizdan namunalar"
+              alt={t("examples.text")}
             />
             <div ref={modal} id="myModal" className="modal">
               <span onClick={() => closeFunc()} className="close">
@@ -257,7 +275,7 @@ const More = () => {
               className="w-[200px] h-[200px] myImg"
               src={i8}
               id="myImg"
-              alt="Ishlarimizdan namunalar"
+              alt={t("examples.text")}
             />
             <div ref={modal} id="myModal" className="modal">
               <span onClick={() => closeFunc()} className="close">
@@ -273,7 +291,7 @@ const More = () => {
               className="w-[200px] h-[200px] myImg"
               src={i15}
               id="myImg"
-              alt="Ishlarimizdan namunalar"
+              alt={t("examples.text")}
             />
             <div ref={modal} id="myModal" className="modal">
               <span onClick={() => closeFunc()} className="close">
@@ -289,7 +307,7 @@ const More = () => {
               className="w-[200px] h-[200px] myImg"
               src={i16}
               id="myImg"
-              alt="Ishlarimizdan namunalar"
+              alt={t("examples.text")}
             />
             <div ref={modal} id="myModal" className="modal">
               <span onClick={() => closeFunc()} className="close">
@@ -305,7 +323,7 @@ const More = () => {
               className="w-[200px] h-[200px] myImg"
               src={i17}
               id="myImg"
-              alt="Ishlarimizdan namunalar"
+              alt={t("examples.text")}
             />
             <div ref={modal} id="myModal" className="modal">
               <span onClick={() => closeFunc()} className="close">
