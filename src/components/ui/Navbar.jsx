@@ -3,7 +3,7 @@ import { useEffect, useRef, useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import uzb from "../../assets/flag_uzb.png";
 import rus from "../../assets/flag_rus.png";
-import logo1 from "../../assets/logo1.png";
+import logo1 from "../../assets/logo2.jpg";
 import { useTranslation } from "react-i18next";
 
 const { Option } = Select;
