@@ -38,7 +38,7 @@ const Header = () => {
             <Link to={"/"} className="-m-1.5 p-1.5 flex items-center gap-2">
               <img className="h-12 w-auto" src={logo1} alt="" />
               <span className="text-slate-700 font-bold text-2xl">
-                TrueTemp Heating
+                True Temp Heating
               </span>
             </Link>
           </div>
