@@ -14,7 +14,7 @@ const Testimonial = () => {
           <div className="w-full max-w-6xl mx-auto">
             <div className="text-center max-w-xl mx-auto">
               <h1 className="text-3xl sm:text-5xl font-bold sm:mb-5 mb-3 text-gray-600">
-              {t("clients.title")}
+                {t("clients.title")}
               </h1>
               <div className="text-center mb-10">
                 <span className="inline-block w-1 h-1 rounded-full bg-indigo-500 ml-1"></span>
@@ -33,7 +33,7 @@ const Testimonial = () => {
                     </div>
                     <div className="flex-grow pl-3">
                       <h6 className="font-bold text-base uppercase text-gray-600">
-                      {t("clients.client1")}
+                        {t("clients.client1")}
                       </h6>
                     </div>
                   </div>
@@ -52,12 +52,11 @@ const Testimonial = () => {
                 <div className="testimonial w-full mx-auto rounded-lg bg-white border border-gray-200 text-gray-800 font-light mb-6">
                   <div className="w-full flex mb-4 items-center">
                     <div className="overflow-hidden rounded-full w-10 h-10 bg-gray-50 border border-gray-200">
-                      <img src={avatar} alt="" /> 
-                      {/* https://i.pravatar.cc/100?img=2 */}
+                      <img src={avatar} alt="" />
                     </div>
                     <div className="flex-grow pl-3">
                       <h6 className="font-bold text-base uppercase text-gray-600">
-                      {t("clients.client2")}
+                        {t("clients.client2")}
                       </h6>
                     </div>
                   </div>
@@ -79,11 +78,10 @@ const Testimonial = () => {
                   <div className="w-full flex mb-4 items-center">
                     <div className="overflow-hidden rounded-full w-10 h-10 bg-gray-50 border border-gray-200">
                       <img src={avatar} alt="" />
-                      {/* "https://i.pravatar.cc/100?img=3" */}
                     </div>
                     <div className="flex-grow pl-3">
                       <h6 className="font-bold text-base uppercase text-gray-600">
-                      {t("clients.client3")}
+                        {t("clients.client3")}
                       </h6>
                     </div>
                   </div>
@@ -103,11 +101,10 @@ const Testimonial = () => {
                   <div className="w-full flex mb-4 items-center">
                     <div className="overflow-hidden rounded-full w-10 h-10 bg-gray-50 border border-gray-200">
                       <img src={avatar} alt="" />
-                      {/* https://i.pravatar.cc/100?img=4 */}
                     </div>
                     <div className="flex-grow pl-3">
                       <h6 className="font-bold text-base uppercase text-gray-600">
-                      {t("clients.client4")}
+                        {t("clients.client4")}
                       </h6>
                     </div>
                   </div>
@@ -129,11 +126,10 @@ const Testimonial = () => {
                   <div className="w-full flex mb-4 items-center">
                     <div className="overflow-hidden rounded-full w-10 h-10 bg-gray-50 border border-gray-200">
                       <img src={avatar} alt="" />
-                      {/* https://i.pravatar.cc/100?img=5 */}
                     </div>
                     <div className="flex-grow pl-3">
                       <h6 className="font-bold text-base uppercase text-gray-600">
-                      {t("clients.client5")}
+                        {t("clients.client5")}
                       </h6>
                     </div>
                   </div>
@@ -153,11 +149,10 @@ const Testimonial = () => {
                   <div className="w-full flex mb-4 items-center">
                     <div className="overflow-hidden rounded-full w-10 h-10 bg-gray-50 border border-gray-200">
                       <img src={avatar} alt="" />
-                      {/* https://i.pravatar.cc/100?img=6 */}
                     </div>
                     <div className="flex-grow pl-3">
                       <h6 className="font-bold text-base uppercase text-gray-600">
-                      {t("clients.client6")}
+                        {t("clients.client6")}
                       </h6>
                     </div>
                   </div>

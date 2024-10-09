@@ -13,6 +13,7 @@ function Advantage() {
     <>
       <Helmet>
         <title>Катёл бўйича саволларга жавоблар</title>
+        
         <meta
           name="description"
           content="Katyol va gaz qozonlari uchun professional ta'mirlash xizmati: katyol remont, katyol usta, gaz qozonlarini ta'mirlash, xizmat ko'rsatish markazi. Ustalarimiz katyolingizni tez va sifatli ta'mirlaydi. Газовые котлы: ремонт и обслуживание в вашем регионе. Katyol bo'yicha savollarga javoblar"

@@ -80,8 +80,6 @@ const HeroCarousel = () => {
           </div>
         </div>
         <div className="carousel-item bg_img2" data-bs-interval="4000">
-          {/* <img src="./img/kif-2.jfif" className="d-block w-100" alt="..." /> */}
-
           <div className="relative isolate px-6 pt-0 lg:px-8">
             <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-32">
               <div className="hidden sm:mb-8 sm:flex sm:justify-center">
@@ -94,17 +92,17 @@ const HeroCarousel = () => {
                       className="absolute inset-0"
                       aria-hidden="true"
                     ></span>
-                   {t("hero.link")} &nbsp;{" "}
+                    {t("hero.link")} &nbsp;{" "}
                     <span aria-hidden="true">&rarr;</span>
                   </Link>
                 </div>
               </div>
               <div className="text-center">
                 <h1 className="text-2xl font-bold tracking-tight text-white sm:text-5xl">
-                {t("hero.title2")}
+                  {t("hero.title2")}
                 </h1>
                 <p className="mt-6 sm:text-lg text-[15px] px-3 sm:px-0 leading-8 text-white">
-                {t("hero.subtitle2")}
+                  {t("hero.subtitle2")}
                 </p>
                 <div className="mt-10 flex items-center justify-center gap-x-6">
                   <Link

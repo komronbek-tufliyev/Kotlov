@@ -29,18 +29,6 @@ const Location = () => {
             {t("locations.subtitle")}
           </p>
         </div>
-        {/* <div className="map_item">
-          <Location2 />
-          <p className="text-gray-600 font-semibold sm:text-lg text-xl leading-8">
-            Universam bozoridan 3 daqiqa
-          </p>
-        </div>
-        <div className="map_item">
-          <Location3 />
-          <p className="text-gray-600 font-semibold sm:text-lg text-xl leading-8">
-            Aeroportdan 8 daqiqa
-          </p>
-        </div> */}
       </div>
 
       <div style={{ position: "relative", overflow: "hidden" }}>
