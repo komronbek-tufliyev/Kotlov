@@ -51,6 +51,9 @@ button:focus-visible {
 html {
   font-size: 16px;
 }
+header .active{
+  font-weight: 700;
+}
 .custom-accordion-header{
   font-size: 25px;
   font-weight: bold;

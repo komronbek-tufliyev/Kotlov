@@ -8,7 +8,7 @@ import { useTranslation } from "react-i18next";
 
 const { Option } = Select;
 const Header = () => {
-  const hidden = useRef();
+  const hiddenRef = useRef();
   const { t, i18n } = useTranslation();
   const [lang, setLang] = useState(localStorage.getItem("lang") || "uzb"); 
   const changeLanguage = (lng) => {
@@ -21,10 +21,10 @@ const Header = () => {
   }, [lang, i18n])
 
   function openNavbarFunction() {
-    hidden.current?.classList.remove("hidden");
+    hiddenRef.current?.classList.remove("hidden");
   }
   function closeNavbarFunction() {
-    hidden.current?.classList.add("hidden");
+    hiddenRef.current?.classList.add("hidden");
   }
 
   return (
@@ -137,7 +137,7 @@ const Header = () => {
           </div>
         </nav>
         <div
-          ref={hidden}
+          ref={hiddenRef}
           className="lg:hidden hidden"
           role="dialog"
           aria-modal="true"
