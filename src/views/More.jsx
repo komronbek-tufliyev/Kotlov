@@ -35,7 +35,7 @@ const More = () => {
   }, [i18n]);
   return (
     <div className="container">
-       <Helmet>
+      <Helmet>
         <title>Катёл бўйича намуналар</title>
         <meta
           name="description"
@@ -45,11 +45,23 @@ const More = () => {
           name="keywords"
           content="katyol remont, катёл ремонт, кател ремонт, remont katyol, ремонт катёл, ремонт кател, katyol usta, katyol ustasi, катёл уста, кател устаси, мастер котлов, кател мастер, сервис сентер катёл, service centre gas boiler, fix gas boiler, master gas boiler, katyol, катёл, кател"
         />
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=AW-16753534461"
+        ></script>
+        <script>
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'AW-16753534461');
+          `}
+        </script>
       </Helmet>
       <div className="min-h-[90dvh]">
         <div className="text-center max-w-xl mx-auto">
           <h1 className="text-3xl sm:text-5xl font-bold mt-12 sm:mb-5 mb-3 text-gray-600">
-          {t("examples.title")}
+            {t("examples.title")}
           </h1>
           <div className="text-center mb-6 sm:mb-12">
             <span className="inline-block w-1 h-1 rounded-full bg-green-500 ml-1"></span>

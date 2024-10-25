@@ -14,9 +14,25 @@ const NumberOfStudents = () => {
           name="keywords"
           content="katyol remont, катёл ремонт, кател ремонт, remont katyol, ремонт катёл, ремонт кател, katyol usta, katyol ustasi, катёл уста, кател устаси, мастер котлов, кател мастер, сервис сентер катёл, service centre gas boiler, fix gas boiler, master gas boiler, katyol, катёл, кател"
         />
+
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=AW-16753534461"
+        ></script>
+        <script>
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'AW-16753534461');
+          `}
+        </script>
       </Helmet>
       <Contact />
-      <div className="container sm:mb-20 mb-16" style={{ position: "relative", overflow: "hidden" }}>
+      <div
+        className="container sm:mb-20 mb-16"
+        style={{ position: "relative", overflow: "hidden" }}
+      >
         <a
           href="https://yandex.uz/maps/10335/tashkent/?utm_medium=mapframe&utm_source=maps"
           style={{ color: "#eee", fontSize: 12, position: "absolute", top: 0 }}

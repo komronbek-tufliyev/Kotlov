@@ -13,7 +13,7 @@ function Advantage() {
     <>
       <Helmet>
         <title>Катёл бўйича саволларга жавоблар</title>
-        
+
         <meta
           name="description"
           content="Katyol va gaz qozonlari uchun professional ta'mirlash xizmati: katyol remont, katyol usta, gaz qozonlarini ta'mirlash, xizmat ko'rsatish markazi. Ustalarimiz katyolingizni tez va sifatli ta'mirlaydi. Газовые котлы: ремонт и обслуживание в вашем регионе. Katyol bo'yicha savollarga javoblar"
@@ -22,6 +22,18 @@ function Advantage() {
           name="keywords"
           content="katyol remont, катёл ремонт, кател ремонт, remont katyol, ремонт катёл, ремонт кател, katyol usta, katyol ustasi, катёл уста, кател устаси, мастер котлов, кател мастер, сервис сентер катёл, service centre gas boiler, fix gas boiler, master gas boiler, katyol, катёл, кател"
         />
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=AW-16753534461"
+        ></script>
+        <script>
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'AW-16753534461');
+          `}
+        </script>
       </Helmet>
       <div className="advantage mt-10">
         <div className="text-center max-w-xl mx-auto">
