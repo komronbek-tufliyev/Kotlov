@@ -11,22 +11,26 @@
   <loc>https://boilerservice.uz/</loc>
   <lastmod>2024-10-27T09:47:04+00:00</lastmod>
   <priority>1.0</priority>
+  <changefreq>weekly</changefreq>
 </url>
 <url>
   <loc>https://boilerservice.uz/contact</loc>
   <lastmod>2024-10-27T09:47:04+00:00</lastmod>
   <priority>0.9</priority>
+  <changefreq>weekly</changefreq>
 </url>
 
 <url>
   <loc>https://boilerservice.uz/question</loc>
   <lastmod>2024-10-27T09:47:04+00:00</lastmod>
-  <priority>0.8</priority>
+  <priority>0.6</priority>
+  <changefreq>weekly</changefreq>
 </url>
 <url>
   <loc>https://boilerservice.uz/more</loc>
   <lastmod>2024-10-27T09:47:04+00:00</lastmod>
-  <priority>0.8</priority>
+  <priority>0.5</priority>
+  <changefreq>weekly</changefreq>
 </url>
 
 
