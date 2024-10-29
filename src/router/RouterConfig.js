@@ -9,20 +9,20 @@ const More = React.lazy(() => import("../views/More"));
 
 export const RoutesConfig = [{
     title: "",
+    path: "/",
+    Layout: DesktopLayout,
+    roles: [],
+    subOptions: [],
+    Component: Home,
+  }, {
+    title: "",
     path: "/contact",
     Layout: DesktopLayout,
     roles: [],
     subOptions: [],
     Component: Contact,
   },
-  {
-    title: "",
-    path: "/",
-    Layout: DesktopLayout,
-    roles: [],
-    subOptions: [],
-    Component: Home,
-  },
+
   {
     title: "",
     path: "/question",
