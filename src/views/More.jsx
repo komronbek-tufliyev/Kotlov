@@ -297,54 +297,7 @@ const More = () => {
               <div ref={captionText} id="caption"></div>
             </div>
           </div>
-          {/* <div className="d15">
-            <img
-              onClick={(e) => onOpen(e)}
-              className="w-[200px] h-[200px] myImg"
-              src={i15}
-              id="myImg"
-              alt={t("examples.text")}
-            />
-            <div ref={modal} id="myModal" className="modal">
-              <span onClick={() => closeFunc()} className="close">
-                &times;
-              </span>
-              <img ref={modalImg} className="modal-content" id="img01" />
-              <div ref={captionText} id="caption"></div>
-            </div>
-          </div>
-          <div className="d16">
-            <img
-              onClick={(e) => onOpen(e)}
-              className="w-[200px] h-[200px] myImg"
-              src={i16}
-              id="myImg"
-              alt={t("examples.text")}
-            />
-            <div ref={modal} id="myModal" className="modal">
-              <span onClick={() => closeFunc()} className="close">
-                &times;
-              </span>
-              <img ref={modalImg} className="modal-content" id="img01" />
-              <div ref={captionText} id="caption"></div>
-            </div>
-          </div>
-          <div className="d17 sm:block hidden">
-            <img
-              onClick={(e) => onOpen(e)}
-              className="w-[200px] h-[200px] myImg"
-              src={i17}
-              id="myImg"
-              alt={t("examples.text")}
-            />
-            <div ref={modal} id="myModal" className="modal">
-              <span onClick={() => closeFunc()} className="close">
-                &times;
-              </span>
-              <img ref={modalImg} className="modal-content" id="img01" />
-              <div ref={captionText} id="caption"></div>
-            </div>
-          </div> */}
+          
         </div>
       </div>
     </div>
