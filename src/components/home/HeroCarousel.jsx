@@ -56,11 +56,11 @@ const HeroCarousel = () => {
               </div>
               <div className="text-center">
                 <h1 className="text-2xl font-bold tracking-tight text-white sm:text-5xl">
-                  {t("hero.title1")}
-                </h1>
-                <p className="mt-6 sm:text-lg text-[15px] px-3 sm:px-0 leading-8 text-white">
                   {t("hero.subtitle1")}
-                </p>
+                </h1>
+                {/* <p className="mt-6 sm:text-lg text-[15px] px-3 sm:px-0 leading-8 text-white">
+                  {t("hero.subtitle1")}
+                </p> */}
                 <div className="mt-10 flex items-center justify-center gap-x-6">
                   <Link
                     to={"/contact"}
@@ -99,11 +99,11 @@ const HeroCarousel = () => {
               </div>
               <div className="text-center">
                 <h1 className="text-2xl font-bold tracking-tight text-white sm:text-5xl">
-                  {t("hero.title2")}
-                </h1>
-                <p className="mt-6 sm:text-lg text-[15px] px-3 sm:px-0 leading-8 text-white">
                   {t("hero.subtitle2")}
-                </p>
+                </h1>
+                {/* <p className="mt-6 sm:text-lg text-[15px] px-3 sm:px-0 leading-8 text-white">
+                  {t("hero.subtitle2")}
+                </p> */}
                 <div className="mt-10 flex items-center justify-center gap-x-6">
                   <Link
                     to={"/contact"}
@@ -142,11 +142,11 @@ const HeroCarousel = () => {
               </div>
               <div className="text-center">
                 <h1 className="text-2xl font-bold tracking-tight text-white sm:text-5xl">
-                  {t("hero.title3")}
-                </h1>
-                <p className="mt-6 sm:text-lg text-[15px] px-3 sm:px-0 leading-8 text-white">
                   {t("hero.subtitle3")}
-                </p>
+                </h1>
+                {/* <p className="mt-6 sm:text-lg text-[15px] px-3 sm:px-0 leading-8 text-white">
+                  {t("hero.subtitle3")}
+                </p> */}
                 <div className="mt-10 flex items-center justify-center gap-x-6">
                   <Link
                     to={"/contact"}

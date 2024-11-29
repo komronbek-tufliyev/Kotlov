@@ -61,9 +61,9 @@ const Home = () => {
                     <div className="text-white p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-4 shadow-lg rounded-full bg-red-400">
                       <i className="fa-regular fa-clock text-2xl"></i>
                     </div>
-                    <h6 className="text-xl font-semibold">
+                    <h1 className="text-xl font-semibold">
                       {t("services.title1")}
-                    </h6>
+                    </h1>
                     <p className="mt-2 mb-4 text-gray-600">
                       {t("services.text1")}
                     </p>
@@ -77,9 +77,9 @@ const Home = () => {
                     <div className="text-white p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-4 shadow-lg rounded-full bg-blue-400">
                       <i className="fa-solid fa-list-check text-2xl"></i>
                     </div>
-                    <h6 className="text-xl font-semibold">
+                    <h1 className="text-xl font-semibold">
                       {t("services.title2")}
-                    </h6>
+                    </h1>
                     <p className="mt-2 mb-4 text-gray-600">
                       {t("services.text2")}
                     </p>
@@ -93,9 +93,9 @@ const Home = () => {
                     <div className="text-white p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-4 shadow-lg rounded-full bg-green-400">
                       <i className="fa-solid fa-screwdriver-wrench text-2xl"></i>
                     </div>
-                    <h6 className="text-xl font-semibold">
+                    <h1 className="text-xl font-semibold">
                       {t("services.title3")}
-                    </h6>
+                    </h1>
                     <p className="mt-2 mb-4 text-gray-600">
                       {t("services.text3")}
                     </p>
